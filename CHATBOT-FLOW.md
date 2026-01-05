@@ -985,33 +985,21 @@ Para futuras modificaciones, solo dime qué quieres cambiar en cualquier momento
 **Mateo decide empezar a aceptar también sesiones pequeñas:**
 
 ```
-═══════════════════════════════════════════════════════════════════
-🔄 CAMBIO DE MODELO DE TRABAJO
-═══════════════════════════════════════════════════════════════════
+👨‍🎨 Mateo: "Quiero cambiar mi forma de trabajar"
 
-👨‍🎨 Artista: "Quiero cambiar mi forma de trabajar"
+🤖 Ghostline:
+¡Perfecto, Mateo! 👋 ¿Qué quieres modificar?
 
----
+1️⃣ ⏰ Horarios y días de trabajo
+2️⃣ 💰 Tarifas y depósitos
+3️⃣ 🎨 Tipo de sesiones (grandes/pequeñas)
+4️⃣ 🖼️ Especialidades y restricciones
+5️⃣ 📋 Metodología de proyectos
+6️⃣ 👀 Ver configuración completa
 
-🤖 Bot:
-¡Perfecto, Mateo! 👋
+👨‍🎨 Mateo: "Opción 3"
 
-¿Qué quieres modificar?
-
-1️⃣ Horarios y días de trabajo
-2️⃣ Tarifas y depósitos
-3️⃣ Tipo de sesiones (grandes/pequeñas)
-4️⃣ Especialidades y restricciones
-5️⃣ Metodología de proyectos
-6️⃣ Ver configuración completa
-
----
-
-👨‍🎨 Artista: "Opción 3"
-
----
-
-🤖 Bot:
+🤖 Ghostline:
 **Tu configuración actual:**
 🎨 Solo proyectos grandes (8 horas/sesión, máx 1 al día)
 
@@ -1022,214 +1010,184 @@ Para futuras modificaciones, solo dime qué quieres cambiar en cualquier momento
 3️⃣ Híbrido exclusivo (1 grande O varias pequeñas - sin mezclar)
 4️⃣ Flexible (puedo hacer 1 grande + pequeñas el mismo día)
 
----
-
-👨‍🎨 Artista: "Opción 3. Quiero hacer proyectos grandes como siempre, 
-pero también quiero aprovechar para hacer tatuajes pequeños los días 
+👨‍🎨 Mateo: "Opción 3. Quiero hacer proyectos grandes como siempre,
+pero también quiero aprovechar para hacer tatuajes pequeños los días
 que no tenga proyectos grandes agendados"
 
----
-
-🤖 Bot:
+🤖 Ghostline:
 Entendido. Cambias a modelo **Híbrido Exclusivo**:
 
-📋 **Regla:**
+📋 **Nueva Regla:**
 - Días con proyecto grande (8h) → Bloquea todo el día
 - Días sin proyecto grande → Puedes hacer varias sesiones pequeñas
 
 ¿Cuántas sesiones pequeñas máximo aceptarías en un día?
-(Recomendado: 3-4 sesiones)
+👨‍🎨 Mateo: "Máximo 3 sesiones pequeñas"
 
----
-
-👨‍🎨 Artista: "Máximo 3 sesiones pequeñas"
-
----
-
-🤖 Bot:
-✅ Máximo 3 sesiones pequeñas al día.
+🤖 Ghostline:
+✅ Máximo 3 sesiones pequeñas al día
 
 ¿Cuánto tiempo mínimo y máximo para considerar una sesión "pequeña"?
-(Ejemplo: "Mínimo 1 hora, máximo 3 horas")
+👨‍🎨 Mateo: "Mínimo 1 hora, máximo 3 horas"
 
----
-
-👨‍🎨 Artista: "Mínimo 1 hora, máximo 3 horas"
-
----
-
-🤖 Bot:
-✅ Sesiones pequeñas: 1-3 horas.
+🤖 Ghostline:
+✅ Sesiones pequeñas: 1-3 horas
 
 ¿Cuánto tiempo de descanso necesitas entre sesiones pequeñas?
-(Recomendado: 20-30 minutos)
+👨‍🎨 Mateo: "30 minutos"
 
----
-
-👨‍🎨 Artista: "30 minutos"
-
----
-
-🤖 Bot:
-✅ 30 minutos de break entre sesiones.
+🤖 Ghostline:
+✅ 30 minutos de break entre sesiones
 
 ¿Cuánto cobrarás por hora en sesiones pequeñas?
 (Tu tarifa de proyectos grandes es $1,800/8h = $225/hora)
+👨‍🎨 Mateo: "Voy a cobrar $250 por hora en sesiones pequeñas"
+
+🤖 Ghostline:
+✅ $250 USD por hora (sesiones pequeñas)
 
 ---
 
-👨‍🎨 Artista: "Voy a cobrar $250 por hora en sesiones pequeñas"
+## 🎉 NUEVO MODELO CONFIGURADO
 
----
+**📊 Comparación:**
 
-🤖 Bot:
-✅ $250 USD por hora (sesiones pequeñas).
+| Aspecto | Antes | Ahora |
+|---------|-------|-------|
+| **Modelo** | Solo Grandes | **Híbrido Exclusivo** |
+| **Grandes** | 8h, $1,800, 1/día | 8h, $1,800, 1/día |
+| **Pequeñas** | ❌ No disponibles | ✅ 1-3h, $250/h, máx 3/día |
+| **Restricción** | - | 🚫 NO se mezclan el mismo día |
 
-═══════════════════════════════════════════════════════════════════
-✅ NUEVO MODELO CONFIGURADO
-═══════════════════════════════════════════════════════════════════
+**📅 Ejemplos de días:**
 
-**Antes:**
-🎨 Solo proyectos grandes (8h, 1/día)
-
-**Ahora:**
-🎨 **Proyectos grandes:** 8 horas, $1,800, máx 1/día
-⚡ **Sesiones pequeñas:** 1-3 horas, $250/hora, máx 3/día
-🚫 **Restricción:** NO se mezclan el mismo día
-
-**Ejemplos:**
-✅ Lunes: 1 proyecto grande (8h) → Día completo bloqueado
-✅ Martes: 3 sesiones pequeñas (2h, 1.5h, 2h) → 5.5h total
-✅ Miércoles: 2 sesiones pequeñas (3h, 2h) → 5h total
-❌ Jueves: 1 proyecto grande + 1 pequeña → NO PERMITIDO
+| Día | Proyecto Grande | Sesiones Pequeñas | Estado |
+|-----|----------------|-------------------|--------|
+| Lunes | ✅ Manga completa (8h) | ❌ Bloqueado | Día completo |
+| Martes | ❌ Libre | ✅ 3 sesiones (2h, 1.5h, 2h) | 5.5h total |
+| Miércoles | ❌ Libre | ✅ 2 sesiones (3h, 2h) | 5h total |
+| Jueves | ✅ Proyecto grande + pequeña | ❌ **NO PERMITIDO** | Error |
 
 ¿Confirmar cambios?
 
----
+👨‍🎨 Mateo: "Sí, perfecto"
 
-👨‍🎨 Artista: "Sí, perfecto"
-
----
-
-🤖 Bot:
+🤖 Ghostline:
 🎉 ¡Modelo actualizado!
 
-A partir de ahora:
+**A partir de ahora:**
 ✅ Seguiré priorizando tus proyectos grandes
 ✅ Cuando tengas días libres, ofreceré sesiones pequeñas
 ✅ Nunca mezclaré ambos tipos el mismo día
 ✅ Gestionaré breaks de 30 min entre sesiones pequeñas
 
-Tu agenda ahora es más flexible. 💪
-
-═══════════════════════════════════════════════════════════════════
+¡Tu agenda ahora es más flexible! 💪
 ```
 
 ---
 
-### 📊 Escenario 4: Consulta de Configuración Actual
+---
+
+## 📊 Consulta de Configuración Actual
+
+### 👀 Ver Perfil Completo
 
 ```
-═══════════════════════════════════════════════════════════════════
+👨‍🎨 Mateo: "Quiero ver mi configuración actual"
 
-👨‍🎨 Artista: "Quiero ver mi configuración actual"
+🤖 Ghostline:
+¡Claro! Aquí tienes tu configuración completa actualizada:
+```
 
----
+### 📋 **PERFIL PROFESIONAL**
 
-🤖 Bot:
-═══════════════════════════════════════════════════════════════════
-⚙️ TU CONFIGURACIÓN ACTUAL - GHOSTLINE
-═══════════════════════════════════════════════════════════════════
+| **Información Básica** | **Detalles** |
+|------------------------|--------------|
+| 👤 **Nombre** | Mateo Mendoza |
+| 📧 **Email** | mateo.mendoza.ink@gmail.com |
+| 📸 **Instagram** | @mateomendoza.ink |
+| 🌍 **Zona Horaria** | America/Mexico_City (CDMX) |
+| ✅ **Estado** | Activo |
 
-👤 **Perfil:**
-- Nombre: Mateo Mendoza
-- Email: mateo.mendoza.ink@gmail.com
-- Instagram: @mateomendoza.ink
-- Zona horaria: America/Mexico_City (CDMX)
-- Estado: ✅ Activo
+### 📅 **HORARIO DE TRABAJO**
 
----
+| **Aspecto** | **Configuración** |
+|-------------|-------------------|
+| 📆 **Días** | Lunes a Viernes |
+| 🕐 **Inicio** | 9:00 AM |
+| 🕔 **Fin** | 6:00 PM |
+| ⏱️ **Horas/día** | 9 horas |
 
-📅 **Horario:**
-- Días: Lun-Vie
-- Horas: 9:00 AM - 6:00 PM
+### 🎨 **MODELO DE TRABAJO**
 
----
+**Tipo:** Híbrido Exclusivo
 
-🎨 **Tipo de Trabajo:**
-- Modelo: Híbrido Exclusivo
+#### **Proyectos Grandes:**
+| **Característica** | **Valor** |
+|-------------------|-----------|
+| ⏱️ **Duración** | 8 horas |
+| 📊 **Máximo por día** | 1 sesión |
+| 💰 **Tarifa** | $1,800 USD |
+| 🚫 **Día completo** | Sí (bloquea todo el día) |
 
-**Proyectos Grandes:**
-- Duración: 8 horas
-- Máximo por día: 1
-- Tarifa: $1,800 USD
-- Requiere día completo: ✅ Sí
+#### **Sesiones Pequeñas:**
+| **Característica** | **Valor** |
+|-------------------|-----------|
+| ⏱️ **Duración** | 1-3 horas |
+| 📊 **Máximo por día** | 3 sesiones |
+| 💰 **Tarifa** | $250 USD/hora |
+| ⏸️ **Break entre sesiones** | 30 minutos |
 
-**Sesiones Pequeñas:**
-- Duración: 1-3 horas
-- Máximo por día: 3
-- Tarifa: $250 USD/hora
-- Break entre sesiones: 30 minutos
+### 💰 **TARIFAS Y PAGOS**
 
----
+| **Servicio** | **Tarifa** | **Depósito** |
+|--------------|------------|--------------|
+| **Proyectos Grandes** | $1,800 USD/sesión | $540 USD (30%) |
+| **Sesiones Pequeñas** | $250 USD/hora | Variable |
+| **Moneda** | USD | - |
 
-💰 **Tarifas:**
-- Proyectos grandes: $1,800 USD/sesión
-- Sesiones pequeñas: $250 USD/hora
-- Depósito: 30% ($540 para grandes, variable para pequeñas)
-- Moneda: USD
+### 🎨 **ESPECIALIDADES**
 
----
+| **Estilos** | **Detalles** |
+|-------------|--------------|
+| **Especialidades** | • Neo-Japonés<br>• Blackwork<br>• Dotwork |
+| **Restricciones** | • No tatuajes pequeños (< 10cm)<br>• No nombres de parejas<br>• No copias de diseños ajenos |
 
-🎨 **Especialidades:**
-- Neo-Japonés
-- Blackwork
-- Dotwork
+### 📋 **METODOLOGÍA DE PROYECTOS**
 
----
+**Manga Completa:**
+- 📊 **Sesiones totales:** 10
+- 🎯 **Tipo de sesiones:** Grandes (8h cada una)
+- 📅 **Estructura de viajes:**
+  - Viaje 1: 4 días consecutivos
+  - Viaje 2: 3 días (mínimo 21 días después)
+  - Viaje 3: 3 días (mínimo 21 días después)
 
-🚫 **No hace:**
-- Tatuajes pequeños (< 10cm)
-- Nombres de parejas
-- Copias de diseños ajenos
+### 📆 **POLÍTICAS DE RESERVA**
 
----
+| **Política** | **Configuración** |
+|--------------|-------------------|
+| 📅 **Anticipación mínima** | 30 días |
+| 📅 **Anticipación máxima** | 90 días |
+| 🚫 **Aviso de cancelación** | 72 horas |
+| 🚶 **Walk-ins** | No acepta |
+| 💬 **Consulta requerida** | Sí (30 minutos) |
 
-📋 **Metodología (Manga Completa):**
-- Sesiones totales: 10
-- Tipo: Sesiones grandes (8h c/u)
-- Estructura de viajes:
-  • Viaje 1: 4 días consecutivos
-  • Viaje 2: 3 días (mín 21 días después)
-  • Viaje 3: 3 días (mín 21 días después)
+### 📊 **ESTADÍSTICAS RECIENTES**
 
----
+| **Métrica** | **Valor** |
+|-------------|-----------|
+| 🎨 **Proyectos activos** | 4 |
+| ✅ **Sesiones completadas** | 18 grandes, 7 pequeñas |
+| 📈 **Tasa de respuesta** | 94% |
+| 📊 **Ocupación promedio** | 78% |
 
-📆 **Políticas de Reserva:**
-- Anticipación mínima: 30 días
-- Anticipación máxima: 90 días
-- Aviso de cancelación: 72 horas
-- Walk-ins: ❌ No acepta
-- Consulta requerida: ✅ Sí (30 min)
-
----
-
-📊 **Estadísticas (últimos 90 días):**
-- Proyectos activos: 4
-- Sesiones completadas: 18 grandes, 7 pequeñas
-- Tasa de respuesta: 94%
-- Ocupación promedio: 78%
-
-═══════════════════════════════════════════════════════════════════
-
+```
+🤖 Ghostline:
 Para modificar algo, solo dime: "Quiero cambiar [lo que sea]"
 Para ayuda, pregunta: "¿Qué puedes hacer?"
 
----
-
-👨‍🎨 Artista: "Perfecto, gracias"
-
-═══════════════════════════════════════════════════════════════════
+👨‍🎨 Mateo: "Perfecto, gracias"
 ```
 
 ---
