@@ -13,3 +13,4 @@ export { GapFillerQueue } from './gap-filler-queue.entity';
 export { ProspectInteraction } from './prospect-interaction.entity';
 export { AnalyticsEvent } from './analytics-event.entity';
 export { SearchCache } from './search-cache.entity';
+export { ReferenceImage } from './reference-image.entity';

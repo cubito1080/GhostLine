@@ -11,6 +11,7 @@ import {
 } from 'typeorm';
 import { Client } from './client.entity';
 import { Message } from './message.entity';
+import { ReferenceImage } from './reference-image.entity';
 
 @Entity('conversations')
 @Index(['client_id', 'status'])
@@ -60,6 +61,9 @@ export class Conversation {
     awaiting_response_for?: string;
   };
 
+  @Column({ type: 'text', nullable: true })
+  client_ideas: string; // Historia personal y narrativa del cliente
+
   @Column({ type: 'timestamp', nullable: true })
   last_message_at: Date;
 
@@ -84,4 +88,7 @@ export class Conversation {
 
   @OneToMany(() => Message, (message) => message.conversation)
   messages: Message[];
+
+  @OneToMany(() => ReferenceImage, (refImage) => refImage.conversation)
+  reference_images: ReferenceImage[];
 }
