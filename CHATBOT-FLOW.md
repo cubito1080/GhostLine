@@ -1,6 +1,55 @@
+
 # Ghostline: El Sistema Operativo para Tatuadores de Élite
 
-Este documento define la lógica de ejecución del asistente Ghostline, desde su fase de configuración inicial hasta su operación autónoma.
+Este documento describe, en español claro y directo, los escenarios reales que tu chatbot puede manejar, con ejemplos de conversaciones limpias y detalladas. Aquí también aprenderás cómo Ghostline está entrenado para ser tu mejor vendedor y aumentar tus ingresos.
+
+---
+
+## 🤖 ¿Cómo Ghostline vende por ti?
+
+Ghostline no solo responde: está entrenado con técnicas de marketing conversacional, persuasión y cierre de ventas. El bot:
+
+- Detecta señales de compra y objeciones.
+- Resalta la exclusividad y valor de tu trabajo.
+- Usa anclaje de valor (no habla de horas, sino de fases y resultados).
+- Cierra ventas con links de pago y recordatorios automáticos.
+- Hace seguimiento post-venta para fidelizar y pedir testimonios.
+
+**¿Por qué aumenta tus ventas?**
+- Responde 24/7, nunca pierde un prospecto.
+- Califica clientes y prioriza los más valiosos.
+- Ofrece portafolio y testimonios en segundos.
+- Automatiza el seguimiento y reenganche de clientes.
+
+---
+## 🚀 Escenario Destacado: Go Service (Plantilla Express)
+
+El Go Service permite al artista ofrecer plantillas prediseñadas listas para tatuar, acelerando la venta y llenando huecos en la agenda.
+
+**Flujo ejemplo:**
+
+```
+Artista (Carlos): "Ghostline, quiero activar el Go Service para mi plantilla de dragón minimalista."
+
+Ghostline Bot: "¡Listo! ¿Qué precio quieres poner para esta plantilla?"
+
+Artista: "$400 USD, solo 1 disponible."
+
+Ghostline Bot: "Plantilla 'Dragón Minimalista' publicada en tu catálogo Go Service por $400 USD. ¿Quieres que la promocione a tus seguidores y clientes en lista de espera?"
+
+Artista: "Sí, anúncialo en WhatsApp y redes."
+
+Ghostline Bot: "Mensaje enviado a tus clientes y seguidores. El primero en confirmar y pagar se queda con la plantilla. ¿Quieres ver el listado de interesados en tiempo real?"
+
+Artista: "Sí, muéstrame."
+
+Ghostline Bot: "Actualmente interesados: 3. ¿Deseas reservar para alguien o dejarlo abierto?"
+```
+
+**Beneficios:**
+- Vendes diseños exclusivos sin esperar consultas largas.
+- Llenas huecos de agenda rápidamente.
+- El bot gestiona pagos y reservas automáticamente.
 
 ---
 
@@ -102,164 +151,73 @@ Cuando un cliente completa el check-in final (día 21):
 
 ---
 
-## 💬 7. Simulaciones de Conversación (Escenarios Reales)
 
-### Escenario 0: El Setup (Artista ↔ Chatbot)
-**Conversación:**
+## 💬 Escenarios de Conversación (Limpios y Detallados)
+
+### 1. Onboarding del Artista
 ```
-Tatuador (Carlos): "Hola Ghostline. Vamos a configurar mi cuenta. Cobro $1,200 USD por sesión de día completo. Para proyectos grandes como mangas, me tomo 10 sesiones divididas en 3 viajes (4, 3 y 3 días). El abono para separar toda la agenda es de $1,000 USD."
-
-Ghostline Bot: "Entendido, Carlos. He configurado tu tarifa en $1,200 y la estructura de manga en 10 sesiones. A partir de ahora, cuando alguien pregunte por un brazo completo, le explicaré tu metodología de los 3 viajes y no le daré fechas hasta que confirme el abono de $1,000. ¿Quieres que use un tono formal o más artístico y relajado?"
-
-Tatuador (Carlos): "Artístico pero con autoridad. Que entiendan que soy el experto."
-```
-
----
-
-### Escenario 1: El Diagnóstico y la Propuesta de Viajes
-**Conversación:**
-```
-Cliente (Javi): "Hola, me interesa una manga japonesa con Carlos."
-
-Ghostline Bot: "¡Hola Javi! Un proyecto de manga con Carlos es una pieza de colección que requiere una planificación rigurosa. Carlos trabaja bajo una metodología de 3 Viajes para asegurar la máxima saturación:
-
-Viaje 1 (4 días): Construcción de la línea y fondos.
-Viaje 2 (3 días): Sombras profundas.
-Viaje 3 (3 días): Detalles y segunda capa.
-
-Cada sesión de día completo tiene una inversión de $1,200 USD. Para bloquear estas 10 fechas en su agenda, requerimos un Abono de Reserva de $1,000 USD (que protege tu cupo y el tiempo del artista). ¿Te gustaría que verifiquemos disponibilidad para tu primer viaje?"
-```
-
----
-
-### Escenario 2: El "Gap Filler" (Rescate de Cancelación)
-**Conversación:**
-```
-Ghostline Bot (al Prospecto Mateo): "¡Mateo! Se acaba de liberar un bloque de 4 días continuos con Carlos para este lunes. Es el espacio ideal para empezar ese proyecto de pierna que hablamos.
-
-Al ser un espacio de último minuto, Carlos te dará prioridad absoluta para saltarte los 4 meses de espera. El primero en confirmar con el abono se queda el espacio. ¿Lo tomamos?"
+Artista: Hola Ghostline, quiero configurar mi cuenta.
+Bot: ¡Perfecto! ¿Cuál es tu nombre completo?
+Artista: Carlos Mendoza
+Bot: ¿Cuál es tu email?
+Artista: carlos.mendoza.ink@gmail.com
+Bot: ¿Qué tipo de proyectos haces? (grandes, pequeños, ambos)
+Artista: Solo grandes, mínimo 8 horas.
+Bot: ¿Cuánto cobras por sesión?
+Artista: $1,500 USD
+Bot: ¿Qué porcentaje de depósito pides?
+Artista: 30%
+Bot: ¿En qué estilos te especializas?
+Artista: Neo-Japonés, Blackwork
+Bot: ¿Hay algo que NO tatúes?
+Artista: No hago tatuajes pequeños ni nombres de parejas.
+Bot: ¿Cómo organizas los viajes para mangas?
+Artista: 4, 3 y 3 días, con 21 días entre viajes.
+Bot: ¿Listo para activar Ghostline?
+Artista: Sí
+Bot: ¡Listo! Tu perfil está activo y listo para vender por ti.
 ```
 
----
-
-### Escenario 3: El Ghostline Engine (Procesamiento de Arte)
-**Conversación:**
+### 2. Diagnóstico y Propuesta de Viajes
 ```
-Artista (Carlos): Envía foto de un boceto de un Hannya.
-
-Ghostline Bot: "Diseño detectado. He limpiado las líneas y generado el Stencil Técnico. Ya está en tu Dashboard bajo #Hannya #NeoJaponés. ¿Se lo envío a tu cliente de mañana para que lo vea?"
+Cliente: Hola, quiero una manga japonesa.
+Bot: ¡Genial! Carlos trabaja en 3 viajes (4, 3 y 3 días) para lograr el mejor resultado. Cada sesión es de $1,500 USD. Para reservar, se requiere un abono de $1,000 USD. ¿Quieres que te ayude a agendar tu primer viaje?
 ```
 
----
-
-### Escenario 4: Seguimiento de Cicatrización (Post-Sesión)
-**Conversación (Día 7):**
+### 3. Gap Filler (Oportunidad por Cancelación)
 ```
-Ghostline Bot (a Javi): "¡Hola Javi! Ya pasó una semana desde tu primera sesión con Carlos. ¿Cómo va tu tatuaje? 🎨
-
-Para asegurarme de que todo esté cicatrizando perfectamente, ¿podrías enviarme una foto de la zona tatuada? Esto me ayuda a:
-
-✅ Verificar que la cicatrización va bien
-✅ Ajustar recomendaciones de cuidado si es necesario
-✅ Documentar tu proceso para el siguiente viaje
-
-Recuerda seguir aplicando la crema recomendada 2-3 veces al día."
-
-Cliente (Javi): [Envía foto]
-
-Ghostline Bot: "¡Se ve excelente! La cicatrización está perfecta. Sigue con el mismo cuidado. Te escribo en una semana para el segundo check-in. 💪"
+Bot: ¡Atención! Se liberó un espacio de 4 días con Carlos. El primero en confirmar y abonar se lo queda. ¿Te interesa?
 ```
 
-**Conversación (Día 14):**
+### 4. Procesamiento de Arte
 ```
-Ghostline Bot (a Javi): "Segunda semana completada 🎉 ¿Cómo sientes tu tatuaje? ¿Ya no hay molestias?
-
-Envíame otra foto para ver cómo va evolucionando. A esta altura ya debería estar bien sellado y los colores asentándose."
-
-Cliente (Javi): [Envía foto]
-
-Ghostline Bot: "¡Impecable! Carlos va a estar muy contento con cómo está sanando. Ya puedes empezar a hidratarlo solo 1 vez al día. Una semana más y hacemos el último check-in."
+Artista: Ghostline, subo un boceto nuevo.
+Bot: Diseño detectado y optimizado. Stencil listo en tu dashboard. ¿Lo envío al cliente?
 ```
 
-**Conversación (Día 21):**
+### 5. Seguimiento de Cicatrización
 ```
-Ghostline Bot (a Javi): "¡Última revisión! 🏁 Ya han pasado 3 semanas desde tu sesión.
-
-Envíame la foto final para confirmar que todo está 100% curado. Después de esto, tu piel estará lista para el siguiente viaje en ${nextTripDate}."
-
-Cliente (Javi): [Envía foto]
-
-Ghostline Bot: "¡Perfecto! Cicatrización completada exitosamente. He guardado estas fotos en tu expediente. Carlos está listo para continuar con el Viaje 2. ¿Confirmo las fechas que habíamos apartado para el próximo mes?"
+Bot: ¡Hola! ¿Cómo va tu tatuaje? Envíame una foto para revisar la cicatrización.
+Cliente: [Envía foto]
+Bot: ¡Perfecto! Todo va bien. Te escribo en una semana para el siguiente check-in.
 ```
 
----
-
-### Escenario 5: Búsqueda de Portafolio (Galería Inteligente)
-**Conversación (Cliente busca referencias):**
+### 6. Búsqueda de Portafolio
 ```
-Cliente (María): "Hola, me gustaría ver dragones que haya hecho Carlos antes de decidirme."
-
-Ghostline Bot: "¡Claro! Los dragones son una de las especialidades de Carlos. He encontrado 8 proyectos de dragones en su portafolio.
-
-Te envío algunos de los más impresionantes:"
-
-[Bot envía 3-4 fotos]
-
-Ghostline Bot: "Estos son:
-🐉 Dragón Neo-Japonés - Manga completa (2024)
-🐉 Dragón con Flores de Cerezo - Espalda (2023)
-🐉 Dragón Tradicional - Media manga (2024)
-
-¿Alguno de estos se acerca a lo que tienes en mente?"
-
-Cliente (María): "Me encanta el de la espalda, pero en el brazo."
-
-Ghostline Bot: "Perfecto. Carlos puede adaptar ese diseño para una manga completa. Serían aproximadamente 10 sesiones siguiendo su metodología de 3 viajes. ¿Te gustaría que agendemos una consulta para afinar los detalles?"
+Cliente: ¿Tienes ejemplos de dragones?
+Bot: Sí, aquí tienes 3 proyectos recientes de dragones de Carlos. ¿Quieres ver más?
 ```
 
-**Conversación (Artista busca sus propios trabajos):**
+### 7. Modificación de Perfil
 ```
-Artista (Carlos): "Ghostline, necesito ver todas mis mangas de dragones para una presentación."
-
-Ghostline Bot: "Entendido, Carlos. He encontrado 12 mangas completas con dragones en tu portafolio.
-
-¿Las quieres:
-1. Por fecha (más recientes primero)
-2. Por estilo (Neo-Japonés, Tradicional, etc.)
-3. Todas juntas
-
-¿Cómo las prefieres?"
-
-Artista (Carlos): "Por fecha, las últimas 5."
-
-Ghostline Bot: [Envía 5 fotos]
-
-"Aquí están tus últimas 5 mangas de dragones:
-
-1. Javi - Dragón Neo-Japonés (Nov 2024)
-2. Marco - Dragón con Koi (Oct 2024)
-3. Andrea - Dragón Minimalista (Sep 2024)
-4. Luis - Dragón Tradicional (Ago 2024)
-5. Sofia - Dragón Geométrico (Jul 2024)
-
-¿Necesitas que te las envíe en alta resolución por email?"
-```
-
-**Conversación (Búsqueda por zona específica):**
-```
-Cliente (Pedro): "¿Tienes ejemplos de tatuajes en la pierna?"
-
-Ghostline Bot: "Sí, Carlos ha hecho varios proyectos increíbles en piernas. Te muestro algunos estilos diferentes:"
-
-[Bot envía 4 fotos]
-
-Ghostline Bot: "Aquí tienes:
-🦵 Neo-Japonés - Pierna completa
-🦵 Realismo - Pantorrilla
-🦵 Geométrico - Muslo
-🦵 Biomecánico - Pierna completa
-
-La zona de la pierna es excelente para proyectos grandes. ¿Qué estilo te llama más la atención?"
+Artista: Quiero cambiar mi horario y tarifa.
+Bot: ¿Nuevos días y horas?
+Artista: Lunes a viernes, 9:00 a 18:00
+Bot: ¿Nueva tarifa?
+Artista: $1,800 USD
+Bot: Cambios aplicados. ¿Algo más?
+Artista: No, gracias.
+Bot: ¡Listo! Todo actualizado.
 ```
 
 ---
