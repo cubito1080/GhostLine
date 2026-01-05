@@ -1,3 +1,68 @@
+## 🧠 Simulacros de Conversación: Persuasión y Cierre de Ventas
+
+Aquí tienes dos ejemplos completos de cómo Ghostline persuade y cierra ventas usando técnicas de marketing conversacional, anclaje de valor, manejo de objeciones y urgencia.
+
+---
+
+### Simulacro 1: Cliente indeciso, cierre con anclaje de valor y urgencia
+
+```
+Cliente (Ana): Hola, me interesa hacerme una manga, pero no sé si es el mejor momento. ¿Cuánto cuesta y cómo es el proceso?
+
+Bot: ¡Hola Ana! Una manga es una obra de arte y requiere una planeación especial. Carlos trabaja en 3 viajes (4, 3 y 3 días), cada sesión es de $1,500 USD. El proceso está diseñado para que disfrutes cada etapa y el resultado sea espectacular.
+
+Cliente: ¿Y si no puedo ir a todos los viajes seguidos?
+
+Bot: ¡No te preocupes! Entre cada viaje hay mínimo 21 días para que tu piel sane y puedas organizarte. Además, puedes reservar solo el primer viaje y después agendar los siguientes según tu disponibilidad.
+
+Cliente: ¿Y si cambio de opinión después de reservar?
+
+Bot: Tu depósito es 100% flexible: si necesitas reprogramar, solo avísanos con 72h de anticipación y no pierdes tu lugar ni tu dinero. Así tienes total tranquilidad.
+
+Cliente: Ok, suena bien, pero ¿por qué debería hacerlo ahora?
+
+Bot: Justo ahora se liberó un espacio para el primer viaje en 3 semanas. Si reservas hoy, aseguras ese lugar y el precio actual. Además, Carlos solo toma 2 mangas nuevas al mes, así que es una oportunidad exclusiva. ¿Te ayudo a reservar tu lugar?
+
+Cliente: Sí, quiero reservar.
+
+Bot: ¡Perfecto! Te envío el link de pago para el depósito y aparto tu espacio. ¿Prefieres pagar con tarjeta o transferencia?
+```
+
+**Técnicas usadas:**
+- Anclaje de valor (habla de obra de arte, experiencia, exclusividad)
+- Manejo de objeciones (flexibilidad, tranquilidad, agenda adaptable)
+- Urgencia y escasez (espacio liberado, solo 2 mangas nuevas al mes)
+- Cierre directo y simple
+
+---
+
+### Simulacro 2: Cliente buscando precio, cierre con portafolio y testimonios
+
+```
+Cliente (Luis): Hola, ¿cuánto cuesta un tatuaje de dragón en el brazo?
+
+Bot: ¡Hola Luis! El precio depende del tamaño y detalle, pero para un dragón en manga completa, Carlos recomienda 8-10 sesiones de $1,800 USD cada una. ¿Te gustaría ver ejemplos de dragones que ha hecho?
+
+Cliente: Sí, muéstrame ejemplos.
+
+Bot: Aquí tienes 3 mangas de dragón recientes de Carlos. Todos estos clientes quedaron fascinados con el resultado y varios han regresado para nuevos proyectos. [Bot envía fotos]
+
+Cliente: Se ven increíbles, pero es una inversión grande.
+
+Bot: ¡Totalmente! Por eso Carlos divide el proyecto en fases y solo pagas por cada viaje. Además, tu inversión incluye asesoría personalizada, seguimiento de cicatrización y acceso prioritario a fechas. La mayoría de nuestros clientes dicen que la experiencia y el resultado valen cada peso. ¿Te gustaría agendar una consulta gratuita para resolver todas tus dudas antes de decidir?
+
+Cliente: Sí, quiero la consulta.
+
+Bot: ¡Genial! Te agendo una videollamada de 20 minutos con Carlos para que le cuentes tu idea y recibas una propuesta personalizada. ¿Qué día te viene mejor?
+```
+
+**Técnicas usadas:**
+- Portafolio visual y testimonios (prueba social)
+- Anclaje de valor (asesoría, seguimiento, acceso prioritario)
+- Reducción de fricción (consulta gratuita, pago por fases)
+- Cierre suave (invita a siguiente paso sin presión)
+
+---
 
 # Ghostline: El Sistema Operativo para Tatuadores de Élite
 
