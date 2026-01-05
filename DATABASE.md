@@ -64,26 +64,31 @@ Este documento describe el modelo de base de datos completo del sistema Ghostlin
 │     stage                       │ (inquiry, qualified, deposited, scheduled, completed)
 │     context_summary             │ (JSON: resumen de la conversación)
 │     extracted_variables         │ (JSON: idea, zona, tamaño, etc.)
+│     client_ideas                │ (TEXT: historia personal y narrativa del cliente) ⭐
 │     last_message_at             │
 │     created_at                  │
 │     updated_at                  │
 └─────────────────────────────────┘
          │
          │ 1:N
-         ▼
-┌─────────────────────────────────┐
-│        MESSAGES                 │  ← Historial de Mensajes
-├─────────────────────────────────┤
-│ PK  id                          │
-│ FK  conversation_id             │
-│     from_artist                 │ (boolean)
-│     content                     │
-│     message_type                │ (text, image, audio, payment_link)
-│     whatsapp_message_id         │
-│     status                      │ (sent, delivered, read, failed)
-│     metadata                    │ (JSON: attachments, etc.)
-│     created_at                  │
-└─────────────────────────────────┘
+         ├────────────────────────────────────────┐
+         ▼                                        ▼
+┌─────────────────────────────────┐    ┌─────────────────────────────────┐
+│        MESSAGES                 │    │   REFERENCE_IMAGES              │  ← Imágenes de Referencia del Cliente ⭐
+├─────────────────────────────────┤    ├─────────────────────────────────┤
+│ PK  id                          │    │ PK  id                          │
+│ FK  conversation_id             │    │ FK  conversation_id             │
+│     from_artist                 │    │ FK  client_id                   │
+│     content                     │    │ FK  project_id                  │ (nullable)
+│     message_type                │    │     s3_url                      │ (URL completa en S3)
+│     whatsapp_message_id         │    │     thumbnail_url               │ (Miniatura para dashboard)
+│     status                      │    │     whatsapp_media_id           │ (ID del media en WhatsApp)
+│     metadata                    │    │     file_type                   │ (image/jpeg, image/png)
+│     created_at                  │    │     file_size_kb                │
+└─────────────────────────────────┘    │     order_index                 │ (1-6 para ordenar)
+                                       │     description                 │ (opcional: qué representa)
+                                       │     created_at                  │
+                                       └─────────────────────────────────┘
 
 
 ┌─────────────────────────────────┐
@@ -290,6 +295,18 @@ CREATE INDEX idx_portfolio_filters ON portfolio_images(artist_id, style, body_zo
 CREATE INDEX idx_portfolio_elements ON portfolio_images USING GIN(main_elements);
 ```
 
+### REFERENCE_IMAGES ⭐
+```sql
+-- Obtener referencias por conversación
+CREATE INDEX idx_reference_conversation ON reference_images(conversation_id, order_index);
+
+-- Obtener referencias por cliente
+CREATE INDEX idx_reference_client ON reference_images(client_id, created_at DESC);
+
+-- Obtener referencias por proyecto
+CREATE INDEX idx_reference_project ON reference_images(project_id) WHERE project_id IS NOT NULL;
+```
+
 ### MESSAGES
 ```sql
 -- Obtener historial de conversación
@@ -359,11 +376,14 @@ CLIENTS (1) ──→ (N) CONVERSATIONS
 CLIENTS (1) ──→ (N) PROJECTS
 CLIENTS (1) ──→ (N) APPOINTMENTS
 CLIENTS (1) ──→ (N) PAYMENTS
+CLIENTS (1) ──→ (N) REFERENCE_IMAGES ⭐
 
 CONVERSATIONS (1) ──→ (N) MESSAGES
+CONVERSATIONS (1) ──→ (N) REFERENCE_IMAGES ⭐
 CONVERSATIONS (1) ──→ (0-1) PROJECT
 
 PROJECTS (1) ──→ (N) SESSIONS
+PROJECTS (1) ──→ (N) REFERENCE_IMAGES (optional) ⭐
 
 APPOINTMENTS (1) ──→ (1) CLIENT
 APPOINTMENTS (1) ──→ (1) ARTIST
@@ -628,7 +648,45 @@ LIMIT 10;
 
 ---
 
-### Flujo 4: Cliente Busca Referencias
+### Flujo 4: Cliente Envía Imágenes de Referencia ⭐
+
+```
+1. Cliente envía mensaje de WhatsApp con imagen adjunta
+   └─ WhatsApp webhook recibe media_id
+   
+2. Sistema descarga imagen desde WhatsApp Media API
+   └─ Valida tipo de archivo (image/jpeg, image/png)
+   └─ Valida que no exceda límite (máx 6 imágenes por conversación)
+   
+3. Sube imagen a S3
+   └─ Ruta: s3://ghostline/references/{artist_id}/{conversation_id}/{order_index}_{timestamp}.jpg
+   └─ Genera thumbnail para dashboard
+   
+4. Crea registro en REFERENCE_IMAGES
+   └─ conversation_id, client_id, s3_url, thumbnail_url, whatsapp_media_id
+   └─ order_index (1-6 secuencial)
+   
+5. Bot confirma recepción
+   └─ "✅ Imagen de referencia guardada (3/6). ¿Quieres enviar más?"
+   
+6. Cuando cliente agenda cita
+   └─ Sistema notifica al tatuador con link a galería de referencias
+   └─ CONVERSATIONS.client_ideas se actualiza con contexto de las imágenes
+   
+7. Tatuador accede a referencias
+   └─ Dashboard: GET /api/conversations/{id}/references
+   └─ WhatsApp: Link directo a galería segura
+```
+
+**Límites y Validaciones:**
+- Máximo 6 imágenes por conversación
+- Formato soportado: JPEG, PNG
+- Tamaño máximo por imagen: 10MB
+- Si cliente excede límite, bot sugiere reemplazar imagen antigua
+
+---
+
+### Flujo 5: Cliente Busca Referencias
 
 ```
 1. Cliente: "Quiero ver dragones"
@@ -1238,6 +1296,8 @@ migrations/
   ├── 009_create_portfolio_images.sql
   ├── 010_create_designs.sql
   ├── 011_create_payments.sql
+  ├── 012_create_reference_images.sql ⭐
+  ├── 013_add_client_ideas_to_conversations.sql ⭐
   ├── 012_create_gap_filler_queue.sql
   ├── 013_add_vector_extension.sql
   └── 014_create_search_cache.sql
@@ -1266,6 +1326,59 @@ migrations/
 4. **Configurar RLS** para seguridad multi-tenant
 5. **Setup de migraciones** automáticas con CI/CD
 6. **Poblar data de prueba** para testing del bot
+7. **Implementar tabla REFERENCE_IMAGES** para almacenar referencias del cliente ⭐
+8. **Actualizar campo client_ideas** en CONVERSATIONS para historias personales ⭐
+
+---
+
+## 📋 Schema SQL: REFERENCE_IMAGES ⭐
+
+```sql
+CREATE TABLE reference_images (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  conversation_id UUID NOT NULL REFERENCES conversations(id) ON DELETE CASCADE,
+  client_id UUID NOT NULL REFERENCES clients(id) ON DELETE CASCADE,
+  project_id UUID REFERENCES projects(id) ON DELETE SET NULL,
+  
+  -- Almacenamiento
+  s3_url VARCHAR(500) NOT NULL,
+  thumbnail_url VARCHAR(500) NOT NULL,
+  whatsapp_media_id VARCHAR(255),
+  
+  -- Metadatos
+  file_type VARCHAR(50) NOT NULL DEFAULT 'image/jpeg',
+  file_size_kb INTEGER,
+  order_index SMALLINT NOT NULL CHECK (order_index BETWEEN 1 AND 6),
+  description TEXT,
+  
+  -- Timestamps
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  
+  -- Constraints
+  UNIQUE(conversation_id, order_index)
+);
+
+-- Índices
+CREATE INDEX idx_reference_conversation ON reference_images(conversation_id, order_index);
+CREATE INDEX idx_reference_client ON reference_images(client_id, created_at DESC);
+CREATE INDEX idx_reference_project ON reference_images(project_id) WHERE project_id IS NOT NULL;
+
+-- Trigger para validar límite de 6 imágenes por conversación
+CREATE OR REPLACE FUNCTION check_max_references()
+RETURNS TRIGGER AS $$
+BEGIN
+  IF (SELECT COUNT(*) FROM reference_images WHERE conversation_id = NEW.conversation_id) >= 6 THEN
+    RAISE EXCEPTION 'Maximum 6 reference images per conversation exceeded';
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER enforce_max_references
+  BEFORE INSERT ON reference_images
+  FOR EACH ROW
+  EXECUTE FUNCTION check_max_references();
+```
 
 ---
 
