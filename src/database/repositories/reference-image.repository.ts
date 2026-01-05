@@ -73,7 +73,10 @@ export class ReferenceImageRepository {
   /**
    * Update a reference image
    */
-  async update(id: string, data: Partial<ReferenceImage>): Promise<ReferenceImage> {
+  async update(
+    id: string,
+    data: Partial<ReferenceImage>,
+  ): Promise<ReferenceImage> {
     await this.repository.update(id, data);
     return this.repository.findOne({ where: { id } });
   }
@@ -95,7 +98,10 @@ export class ReferenceImageRepository {
   /**
    * Associate reference images with a project
    */
-  async associateWithProject(conversationId: string, projectId: string): Promise<void> {
+  async associateWithProject(
+    conversationId: string,
+    projectId: string,
+  ): Promise<void> {
     await this.repository.update(
       { conversation_id: conversationId },
       { project_id: projectId },

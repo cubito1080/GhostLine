@@ -1,4 +1,10 @@
-import { MigrationInterface, QueryRunner, Table, TableForeignKey, TableIndex } from 'typeorm';
+import {
+  MigrationInterface,
+  QueryRunner,
+  Table,
+  TableForeignKey,
+  TableIndex,
+} from 'typeorm';
 
 export class CreateReferenceImagesTable1704672000000 implements MigrationInterface {
   name = 'CreateReferenceImagesTable1704672000000';
@@ -177,8 +183,10 @@ export class CreateReferenceImagesTable1704672000000 implements MigrationInterfa
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     // Drop trigger
-    await queryRunner.query('DROP TRIGGER IF EXISTS enforce_max_references ON reference_images');
-    
+    await queryRunner.query(
+      'DROP TRIGGER IF EXISTS enforce_max_references ON reference_images',
+    );
+
     // Drop trigger function
     await queryRunner.query('DROP FUNCTION IF EXISTS check_max_references()');
 

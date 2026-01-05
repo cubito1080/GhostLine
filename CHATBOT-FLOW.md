@@ -530,322 +530,295 @@ Mateo: Sí, genera boceto.
 
 ---
 
-═══════════════════════════════════════════════════════════════════
-👻 GHOSTLINE - CONFIGURACIÓN INICIAL ejemplo
-═══════════════════════════════════════════════════════════════════
+# 🎯 CONFIGURACIÓN INICIAL DE GHOSTLINE
 
-🤖 Bot:
-¡Hola! 👋 Soy Ghostline, tu asistente de IA para gestionar tu negocio 
-de tatuajes. Voy a hacerte algunas preguntas para configurar tu perfil 
-y optimizar la forma en que manejo tus citas y conversaciones con clientes.
+## ✨ Bienvenido a tu Setup Inteligente
 
-Esto tomará unos 5-10 minutos. ¿Listo para comenzar?
+Antes de que Ghostline comience a gestionar tus clientes automáticamente, necesitamos configurar tu perfil profesional. Este proceso toma solo **5-10 minutos** y asegura que el bot entienda perfectamente tu metodología de trabajo.
 
----
+## 🚀 Flujo de Configuración Inicial
 
-👨‍🎨 Artista: "Sí, vamos"
+### 📋 Paso 1: Bienvenida y Verificación
 
----
+```
+🤖 Ghostline:
+¡Hola! 👋 Soy Ghostline, tu asistente de IA para tatuajes.
 
-🤖 Bot:
-Perfecto. Primero lo básico:
+Antes de comenzar, necesito verificar que eres el artista registrado.
+¿Cuál es tu nombre completo?
 
-📝 ¿Cuál es tu nombre completo?
+👨‍🎨 Mateo: "Mateo Mendoza"
 
----
+🤖 Ghostline:
+¡Perfecto, Mateo! 🎨
 
-👨‍🎨 Artista: "Mateo Mendoza"
+Ahora voy a hacerte unas preguntas para configurar tu perfil.
+Esto tomará solo 5 minutos y podrás cambiar todo después.
 
----
-
-🤖 Bot:
-Genial, Mateo. 
-
-📧 ¿Cuál es tu email para notificaciones y pagos?
+¿Listo para comenzar? (Responde "Sí" o "Vamos")
+```
 
 ---
 
-👨‍🎨 Artista: "mateo.mendoza.ink@gmail.com"
+### 🏷️ Paso 2: Información Básica
+
+```
+🤖 Ghostline:
+Genial, vamos a configurar tu perfil profesional.
+
+📝 ¿Cuál es tu nombre artístico completo?
+👨‍🎨 Mateo: "Mateo Mendoza"
+
+✅ ¡Guardado!
+
+📧 ¿Tu email para notificaciones y pagos?
+👨‍🎨 Mateo: "mateo.mendoza.ink@gmail.com"
+
+✅ ¡Listo!
+
+🌍 ¿En qué zona horaria trabajas?
+(Ejemplos: America/Mexico_City, America/New_York, Europe/Madrid)
+👨‍🎨 Mateo: "America/Mexico_City"
+
+✅ Configurado para Ciudad de México
+```
 
 ---
 
-🤖 Bot:
-✅ Guardado.
+### 🎨 Paso 3: Estilo de Trabajo y Especialidades
 
-🌎 ¿En qué zona horaria trabajas? 
-(Ejemplo: America/Mexico_City, America/New_York, Europe/Madrid)
+```
+🤖 Ghostline:
+Ahora hablemos de tu arte y metodología. 💪
 
----
+🎯 ¿Qué tipo de sesiones haces principalmente?
 
-👨‍🎨 Artista: "America/Mexico_City"
-
----
-
-🤖 Bot:
-Perfecto. Ahora hablemos de tu estilo de trabajo.
-
-🎨 ¿Qué tipo de sesiones haces?
-
-1️⃣ Solo proyectos grandes (6-8 horas/día, mangas completas, espaldas)
+1️⃣ Solo proyectos grandes (6-8 horas, mangas completas, espaldas)
 2️⃣ Solo tatuajes pequeños (1-3 horas, varias sesiones al día)
-3️⃣ Ambos tipos, pero NO en el mismo día (1 grande O varias pequeñas)
+3️⃣ Ambos tipos, pero NO en el mismo día
 4️⃣ Flexible - puedo mezclar grande + pequeñas el mismo día
 
----
+👨‍🎨 Mateo: "Opción 1, solo proyectos grandes"
 
-👨‍🎨 Artista: "Opción 1, solo hago proyectos grandes"
-
----
-
-🤖 Bot:
-Entendido. Eres un artista de proyectos grandes. 💪
+✅ ¡Eres un maestro de proyectos grandes!
 
 ⏱️ ¿Cuántas horas dura típicamente una sesión grande?
-(Número entre 6-10 horas)
+👨‍🎨 Mateo: "8 horas"
 
----
+✅ 8 horas por sesión confirmadas
 
-👨‍🎨 Artista: "8 horas"
+🎨 ¿En qué estilos te especializas?
+👨‍🎨 Mateo: "Neo-Japonés, Blackwork y Dotwork"
 
----
-
-🤖 Bot:
-✅ 8 horas por sesión.
-
-📅 ¿Qué días de la semana trabajas?
-
-Opciones:
-- "Lunes a Viernes"
-- "Lunes a Sábado"
-- "Solo entre semana (Mar-Jue)"
-- O dime específicamente (Ej: "Martes, Miércoles, Jueves y Sábado")
-
----
-
-👨‍🎨 Artista: "Lunes a Jueves"
-
----
-
-🤖 Bot:
-✅ Lun-Jue (4 días a la semana).
-
-🕐 ¿A qué hora inicias tu día de trabajo?
-(Formato 24h: 09:00, 10:00, etc.)
-
----
-
-👨‍🎨 Artista: "10:00"
-
----
-
-🤖 Bot:
-✅ Inicias a las 10:00 AM.
-
-🕔 ¿A qué hora terminas?
-
----
-
-👨‍🎨 Artista: "18:00"
-
----
-
-🤖 Bot:
-✅ Terminas a las 6:00 PM.
-
-💵 Ahora hablemos de tarifas.
-
-¿Cuánto cobras por sesión?
-(Ejemplo: 1200, 1500, 2000)
-
----
-
-👨‍🎨 Artista: "1500"
-
----
-
-🤖 Bot:
-✅ $1,500 por sesión.
-
-💰 ¿Qué porcentaje de depósito pides para confirmar proyectos?
-(Típicamente 20-50%)
-
----
-
-👨‍🎨 Artista: "30%"
-
----
-
-🤖 Bot:
-✅ 30% de depósito ($450 por sesión de $1,500).
-
-💳 ¿En qué moneda trabajas? (USD, MXN, EUR, etc.)
-
----
-
-👨‍🎨 Artista: "USD"
-
----
-
-🤖 Bot:
-✅ USD como moneda.
-
-🎨 Ahora cuéntame sobre tu estilo:
-
-¿En qué estilos te especializas?
-(Ejemplo: Neo-Japonés, Blackwork, Realismo, etc.)
-
----
-
-👨‍🎨 Artista: "Neo-Japonés, Blackwork y Dotwork"
-
----
-
-🤖 Bot:
-✅ Especialidades: Neo-Japonés, Blackwork, Dotwork.
+✅ Especialidades guardadas: Neo-Japonés, Blackwork, Dotwork
 
 🚫 ¿Hay algo que NO tatúes?
-(Ejemplo: "Tatuajes menores de 10cm", "Nombres de parejas", "Letras pequeñas")
-
----
-
-👨‍🎨 Artista: "No hago tatuajes pequeños, no hago nombres de parejas, 
+👨‍🎨 Mateo: "No hago tatuajes pequeños, no hago nombres de parejas,
 y no copio diseños de otros artistas"
 
----
-
-🤖 Bot:
-✅ Restricciones guardadas.
-
-📱 ¿Tienes Instagram? (Opcional - para compartir con clientes)
+✅ Restricciones configuradas
+```
 
 ---
 
-👨‍🎨 Artista: "@mateomendoza.ink"
+### 📅 Paso 4: Horarios y Disponibilidad
+
+```
+🤖 Ghostline:
+Vamos con tu calendario de trabajo. 📅
+
+📆 ¿Qué días trabajas a la semana?
+👨‍🎨 Mateo: "Lunes a Jueves"
+
+✅ Días de trabajo: Lunes, Martes, Miércoles, Jueves
+
+🕐 ¿A qué hora inicias tu jornada?
+👨‍🎨 Mateo: "10:00"
+
+✅ Inicio: 10:00 AM
+
+🕔 ¿A qué hora terminas?
+👨‍🎨 Mateo: "18:00"
+
+✅ Fin: 6:00 PM
+
+🏥 ¿Cuántos días de descanso mínimo necesitas entre viajes
+de proyectos grandes? (para cicatrización)
+👨‍🎨 Mateo: "21 días"
+
+✅ 21 días entre viajes
+```
 
 ---
 
-🤖 Bot:
-✅ Instagram agregado.
+### 💰 Paso 5: Tarifas y Pagos
 
-📆 Por último, para proyectos grandes:
+```
+🤖 Ghostline:
+Ahora las finanzas. 💰
 
-¿Cuántas sesiones sueles hacer para una manga completa?
+💵 ¿Cuánto cobras por sesión completa?
+👨‍🎨 Mateo: "1500"
 
----
+✅ $1,500 USD por sesión
 
-👨‍🎨 Artista: "Entre 8 y 10 sesiones"
+💰 ¿Qué porcentaje de depósito requieres?
+👨‍🎨 Mateo: "30%"
 
----
+✅ 30% de depósito ($450 por sesión)
 
-🤖 Bot:
-✅ Manga completa: ~10 sesiones.
+💳 ¿En qué moneda trabajas?
+👨‍🎨 Mateo: "USD"
 
-¿Cómo organizas los viajes?
-(Ejemplo: "4 días primer viaje, 3 días segundo viaje, 3 días tercer viaje")
-
----
-
-👨‍🎨 Artista: "Primer viaje 4 días, segundo viaje 3 días, tercer viaje 3 días"
-
----
-
-🤖 Bot:
-✅ Estructura de viajes: [4, 3, 3] días.
-
-🏥 ¿Cuántos días mínimos deben pasar entre viajes para cicatrización?
+✅ Moneda: USD
+```
 
 ---
 
-👨‍🎨 Artista: "21 días"
+### 📱 Paso 6: Redes Sociales y Finalización
 
----
+```
+🤖 Ghostline:
+Casi listo... 🌟
 
-🤖 Bot:
-✅ Mínimo 21 días entre viajes.
+📸 ¿Tu Instagram? (opcional, para compartir con clientes)
+👨‍🎨 Mateo: "@mateomendoza.ink"
+
+✅ Instagram conectado
+
+📋 Por último, para proyectos grandes:
+
+¿Cuántas sesiones necesitas para una manga completa?
+👨‍🎨 Mateo: "Entre 8 y 10 sesiones"
+
+✅ Manga completa: ~10 sesiones
+
+¿Cómo divides los viajes?
+👨‍🎨 Mateo: "Primer viaje 4 días, segundo 3 días, tercer viaje 3 días"
+
+✅ Estructura: [4, 3, 3] días por viaje
 
 📅 ¿Con cuántos días de anticipación mínima aceptas reservas?
+👨‍🎨 Mateo: "30 días"
+
+✅ Mínimo 30 días de anticipación
+```
 
 ---
 
-👨‍🎨 Artista: "30 días"
+## 🎉 ¡CONFIGURACIÓN COMPLETA!
 
----
+### 📊 Resumen de tu Perfil
 
-🤖 Bot:
-✅ Mínimo 30 días de anticipación.
-
-═══════════════════════════════════════════════════════════════════
-✅ ¡CONFIGURACIÓN COMPLETA!
-═══════════════════════════════════════════════════════════════════
-
-Aquí está tu perfil:
-
+```
 👤 **Mateo Mendoza**
 📧 mateo.mendoza.ink@gmail.com
-🌎 Zona horaria: CDMX (America/Mexico_City)
+🌍 Zona horaria: Ciudad de México
 📸 Instagram: @mateomendoza.ink
 
-**⏰ Horario:**
-- Días: Lunes a Jueves
-- Horas: 10:00 AM - 6:00 PM
+⏰ **Horario de Trabajo:**
+   • Días: Lunes a Jueves
+   • Horas: 10:00 AM - 6:00 PM
 
-**💼 Tipo de trabajo:**
-- Solo proyectos grandes (8 horas/sesión)
-- Máximo 1 sesión por día
+💼 **Tipo de Trabajo:**
+   • Solo proyectos grandes (8 horas/sesión)
+   • Máximo 1 sesión por día
 
-**💰 Tarifas:**
-- $1,500 USD por sesión
-- 30% depósito ($450)
+💰 **Tarifas:**
+   • $1,500 USD por sesión
+   • 30% depósito ($450)
 
-**🎨 Especialidades:**
-- Neo-Japonés
-- Blackwork
-- Dotwork
+🎨 **Especialidades:**
+   • Neo-Japonés
+   • Blackwork
+   • Dotwork
 
-**🚫 No hace:**
-- Tatuajes pequeños
-- Nombres de parejas
-- Copias de otros artistas
+🚫 **Restricciones:**
+   • No tatuajes pequeños
+   • No nombres de parejas
+   • No copias de otros artistas
 
-**📋 Metodología (Manga Completa):**
-- 10 sesiones totales
-- Viaje 1: 4 días
-- Viaje 2: 3 días (21+ días después)
-- Viaje 3: 3 días (21+ días después)
+📋 **Metodología Manga Completa:**
+   • Total: ~10 sesiones
+   • Viaje 1: 4 días
+   • Viaje 2: 3 días (21+ días después)
+   • Viaje 3: 3 días (21+ días después)
 
-**📆 Reservas:**
-- Mínimo 30 días de anticipación
-- Consulta previa requerida
+📅 **Reservas:**
+   • Mínimo 30 días anticipación
+   • Consulta previa requerida
+```
 
----
+```
+🤖 Ghostline:
+¡Perfecto! 🎉 Tu perfil está completo.
 
-¿Todo correcto? 
+¿Todo correcto? Responde "Sí" para activar Ghostline,
+o dime qué quieres cambiar.
 
-Responde "Sí" para activar tu Ghostline, o dime qué quieres cambiar.
+👨‍🎨 Mateo: "Sí, perfecto"
 
----
-
-👨‍🎨 Artista: "Sí, perfecto"
-
----
-
-🤖 Bot:
-🎉 ¡Ghostline activado!
+🤖 Ghostline:
+🚀 ¡GHOSTLINE ACTIVADO!
 
 A partir de ahora:
-✅ Responderé automáticamente a nuevos clientes en WhatsApp
-✅ Calificaré prospectos y generaré links de pago
+✅ Responderé automáticamente a clientes en WhatsApp
 ✅ Gestionaré tu calendario y recordatorios
-✅ Haré seguimiento de cicatrización
-✅ Organizaré tu portafolio automáticamente
+✅ Haré seguimiento de proyectos
+✅ Organizaré tu portafolio
 
-Cuando recibas tu primer mensaje, yo me encargaré. 
-Tú solo tatúa. 😎
+¡Tú solo tatúa, yo me encargo del resto! 💪
+```
 
-Para modificar tu configuración en cualquier momento, 
-solo dime: "Quiero cambiar mi perfil" o "Necesito ajustar mi horario"
+---
 
-═══════════════════════════════════════════════════════════════════
+## 🎨 Flujo Especial: Modo Plantilla (Integración con Go Service)
+
+Cuando el artista quiere convertir un boceto en una plantilla lista para tatuar, activa el "Modo Plantilla" que conecta directamente con el servicio de Go.
+
+### 📤 Envío de Diseño en Modo Plantilla
+
+```
+👨‍🎨 Mateo: "Modo plantilla"
+
+🤖 Ghostline:
+¡Modo Plantilla activado! 🎨
+
+Envía la imagen de tu boceto y yo la convertiré en un stencil
+profesional usando nuestro servicio de procesamiento de Go.
+
+📎 Adjunta la imagen del diseño...
+```
+
+### 🔄 Procesamiento Automático (Go Service)
+
+```
+🤖 Ghostline:
+¡Recibido! Procesando tu diseño con Go Service...
+
+🔄 Convirtiendo a stencil de alta precisión...
+   • Aplicando algoritmos de detección de bordes
+   • Optimizando líneas para impresión
+   • Generando versiones thumbnail y web
+
+✅ ¡Listo en 2 segundos!
+
+Descarga tu stencil profesional:
+📎 [Link al stencil en blanco y negro]
+📎 [Link thumbnail para vista previa]
+📎 [Link versión web para WhatsApp]
+
+¿Quieres que lo guarde en tu portafolio o lo envíe a un cliente?
+```
+
+### 🛠️ Lo que hace el Go Service automáticamente:
+
+1. **Stencilizer**: Convierte colores a blanco y negro puro
+2. **Image Clean-up**: Corrige perspectiva y elimina ruido
+3. **Asset Pipeline**: Genera 3 versiones optimizadas
+4. **Cloud Storage**: Guarda en AWS S3 y notifica al sistema
+
+**Resultado**: De boceto crudo a stencil profesional en segundos, sin Photoshop manual.
 ```
 
 ---

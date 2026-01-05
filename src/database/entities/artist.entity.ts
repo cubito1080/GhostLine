@@ -67,7 +67,8 @@ export class Artist {
     
     // ═══ PROJECT METHODOLOGY (for multi-session projects) ═══
     trip_structures?: {
-      [key: string]: { // e.g., "full_sleeve", "back_piece"
+      // e.g., "full_sleeve", "back_piece"
+      [key: string]: {
         estimated_sessions: number; // Total sessions needed
         session_type: 'large' | 'small'; // Type of sessions for this project
         trip_breakdown: number[]; // e.g., [4, 3, 3] = 3 trips
