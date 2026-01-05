@@ -1,0 +1,15 @@
+export { Artist } from './artist.entity';
+export { Client } from './client.entity';
+export { Conversation } from './conversation.entity';
+export { Message } from './message.entity';
+export { Project } from './project.entity';
+export { Appointment } from './appointment.entity';
+export { Session } from './session.entity';
+export { HealingCheckpoint } from './healing-checkpoint.entity';
+export { PortfolioImage } from './portfolio-image.entity';
+export { Design } from './design.entity';
+export { Payment } from './payment.entity';
+export { GapFillerQueue } from './gap-filler-queue.entity';
+export { ProspectInteraction } from './prospect-interaction.entity';
+export { AnalyticsEvent } from './analytics-event.entity';
+export { SearchCache } from './search-cache.entity';

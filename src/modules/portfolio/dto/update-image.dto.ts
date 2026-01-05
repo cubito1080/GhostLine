@@ -1,0 +1,1 @@
+// Update image metadata DTO

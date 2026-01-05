@@ -1,0 +1,1 @@
+// Supabase database connection config

@@ -1,0 +1,1 @@
+// Update queue entry DTO

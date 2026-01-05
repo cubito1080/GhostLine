@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # PostgreSQL with pgvector extension
+  postgres:
+    image: ankane/pgvector:v0.5.1
+    container_name: ghostline-db
+    environment:
+      POSTGRES_USER: ghostline
+      POSTGRES_PASSWORD: ghostline_dev_password
+      POSTGRES_DB: ghostline_tattoo
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - ghostline-network
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ghostline']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # NestJS Backend Application
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: ghostline-backend
+    environment:
+      NODE_ENV: development
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: ghostline
+      DB_PASSWORD: ghostline_dev_password
+      DB_NAME: ghostline_tattoo
+      DB_SSL: 'false'
+      PORT: 3000
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - ghostline-network
+    command: npm run start:dev
+
+  # Redis for caching (optional, for future use)
+  redis:
+    image: redis:7-alpine
+    container_name: ghostline-redis
+    ports:
+      - '6379:6379'
+    networks:
+      - ghostline-network
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+
+networks:
+  ghostline-network:
+    driver: bridge

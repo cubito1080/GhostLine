@@ -1,0 +1,1 @@
+// Upload portfolio image DTO
