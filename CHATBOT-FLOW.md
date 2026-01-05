@@ -7,7 +7,7 @@ Ghostline permite al artista consultar, filtrar y exportar información detallad
 ### Ejemplo: El artista pide todos los tatuajes de sombras de los últimos 6 meses
 
 ```
-Artista (Carlos): Ghostline, muéstrame todos los tatuajes de sombras que he hecho en los últimos seis meses.
+Artista (Mateo): Ghostline, muéstrame todos los tatuajes de sombras que he hecho en los últimos seis meses.
 
 Bot: He encontrado 14 tatuajes de sombras realizados entre julio y diciembre:
 1. Manga completa - Javi (15/07/2025)
@@ -59,31 +59,39 @@ Aquí tienes dos ejemplos completos de cómo Ghostline persuade y cierra ventas 
 ```
 Cliente (Ana): Hola, me interesa hacerme una manga, pero la verdad es que no sé si me alcanza. ¿Cuánto cuesta y cómo funciona?
 
-Bot: ¡Hola Ana! Una manga completa con Carlos es un proyecto artístico que se realiza en 3 viajes (4, 3 y 3 días). Cada sesión es de $1,500 USD, pero el proceso está pensado para que puedas ir pagando por fases y organizarte con tiempo.
+Bot: ¡Hola Ana! Una manga completa con Mateo es un proyecto artístico que se realiza en 3 viajes (4, 3 y 3 días). Cada sesión es de $1,500 USD, pero el proceso está pensado para que puedas ir pagando por fases y organizarte con tiempo. ¿Qué tipo de manga tienes en mente? ¿Algún estilo específico como japonés, realismo o algo más?
 
-Cliente: Uf, sí está caro... ¿No hay forma de hacerlo más económico?
+Cliente: Algo japonés, como dragones y flores. Pero uf, $1,500 por sesión suena mucho... ¿No hay forma de hacerlo más económico? Tal vez en menos sesiones.
 
-Bot: Entiendo que es una inversión importante. Carlos trabaja con materiales premium y cada diseño es único, por eso el valor. Si quieres, podemos empezar con una consulta gratuita para definir el tamaño y ver si se puede ajustar el proyecto a tu presupuesto.
+Bot: Entiendo perfectamente, Ana. Es una inversión significativa, y es normal dudar. Mateo trabaja con materiales premium y cada diseño es único, por eso el valor. Pero hablemos de opciones: podríamos empezar con una media manga para probar, o incluso dividir la manga completa en más fases pequeñas. ¿Qué presupuesto tienes en mente por sesión?
 
-Cliente: ¿Y si solo hago media manga?
+Cliente: No sé, máximo $1,000 por sesión. ¿Es posible?
 
-Bot: ¡Por supuesto! Una media manga suele requerir 4-5 sesiones, y puedes decidir avanzar por etapas. Además, si reservas este mes, el depósito es flexible y puedes reagendar sin penalización.
+Bot: Veo que quieres cuidar tu presupuesto. Una media manga (hasta el codo) requiere 4-5 sesiones de $1,500, pero podríamos ajustar a $1,200 por sesión si empezamos este mes. Además, si reservas ahora, el depósito es solo el 20% ($240), y puedes pagar el resto en cuotas. ¿Te gustaría ver fotos de mangas similares que ha hecho Mateo?
 
-Cliente: ¿Y si después de la primera sesión no puedo seguir?
+Cliente: Sí, muéstrame fotos. Pero ¿y si después de la primera sesión no puedo seguir? ¿Pierdo el dinero?
 
-Bot: No hay problema, solo pagas por las sesiones que realices. Además, tu diseño queda guardado y puedes retomarlo cuando quieras, sin perder tu avance ni tu inversión.
+Bot: Excelente pregunta, Ana. No hay problema, solo pagas por las sesiones que realices. Tu diseño queda guardado en el sistema, y puedes retomarlo cuando quieras, sin perder tu avance ni tu inversión. Muchos clientes hacen pausas por trabajo o viajes, y vuelven contentos.
 
-Cliente: ¿Y si me arrepiento del diseño?
+Cliente: Ok, eso suena mejor. ¿Y si no me gusta el diseño final? ¿Puedo cambiarlo?
 
-Bot: Antes de tatuar, Carlos te muestra el diseño final y puedes pedir cambios. No se inicia nada hasta que estés 100% convencida.
+Bot: Absolutamente. Antes de tatuar, Mateo te muestra el diseño final en una consulta personalizada y puedes pedir todos los cambios que necesites. No se inicia nada hasta que estés 100% convencida. Además, tienes garantía de retoque si algo no sale perfecto.
 
-Cliente: Ok, me interesa la media manga, pero ¿puedo apartar solo con una parte del depósito?
+Cliente: Bueno, me interesa la media manga. Pero ¿puedo apartar solo con una parte del depósito? No tengo todo el dinero ahora.
 
-Bot: Sí, puedes apartar tu lugar con el 20% y el resto lo pagas antes de la primera sesión. ¿Te gustaría agendar la consulta gratuita para resolver todas tus dudas y ver opciones de diseño?
+Bot: Claro, Ana. Puedes apartar tu lugar con el 20% ($300 para $1,500) y el resto lo pagas antes de la primera sesión. Si surge algo, puedes reprogramar sin penalización. ¿Te gustaría agendar la consulta gratuita de 30 minutos para definir el diseño, ver bocetos y resolver todas tus dudas?
 
-Cliente: Sí, agenda la consulta.
+Cliente: Sí, agenda la consulta. ¿Cuánto dura?
 
-Bot: ¡Perfecto! Te agendo una videollamada de 20 minutos con Carlos. ¿Prefieres esta semana o la próxima?
+Bot: ¡Perfecto! La consulta es gratuita y dura 30 minutos. Te agendo una videollamada con Mateo. ¿Prefieres esta semana (tenemos martes o jueves) o la próxima?
+
+Cliente: Esta semana, jueves por la tarde.
+
+Bot: ¡Listo! Te confirmo para este jueves a las 5 PM. Recibirás un recordatorio por WhatsApp. ¿Algo más que quieras saber antes?
+
+Cliente: No, gracias. Suena bien.
+
+Bot: Genial, Ana. Nos vemos el jueves. ¡Que tengas un gran día!
 ```
 
 **Técnicas usadas:**
@@ -98,29 +106,45 @@ Bot: ¡Perfecto! Te agendo una videollamada de 20 minutos con Carlos. ¿Prefiere
 ### Simulacro 2: Cliente dudoso, objeciones y cierre con portafolio/testimonios
 
 ```
-Cliente (Luis): Hola, ¿cuánto cuesta un tatuaje de dragón en el brazo? Vi que Carlos es muy bueno, pero no sé si es para mí.
+Cliente (Luis): Hola, ¿cuánto cuesta un tatuaje de dragón en el brazo? Vi que Mateo es muy bueno, pero no sé si es para mí.
 
-Bot: ¡Hola Luis! El precio depende del tamaño y detalle, pero para una manga de dragón, Carlos recomienda 8-10 sesiones de $1,800 USD cada una. ¿Te gustaría ver ejemplos de dragones que ha hecho?
+Bot: ¡Hola Luis! Depende del tamaño y detalle, pero para una manga completa de dragón, Mateo recomienda 8-10 sesiones de $1,800 USD cada una. ¿Quieres una manga completa o algo más pequeño? ¿Algún estilo específico en mente?
 
-Cliente: Sí, pero la verdad es que nunca he pagado tanto por un tatuaje.
+Cliente: Una manga completa, estilo japonés tradicional. Pero la verdad es que nunca he pagado tanto por un tatuaje. ¿Es normal este precio?
 
-Bot: Lo entiendo, es una decisión importante. Te muestro 3 mangas de dragón recientes de Carlos. Todos estos clientes quedaron tan contentos que han vuelto para nuevos proyectos. [Bot envía fotos]
+Bot: Lo entiendo completamente, Luis. Es una decisión grande, y es normal tener dudas. Mateo es especialista en neo-japonés, y sus precios reflejan años de experiencia y materiales premium. Pero no te preocupes, podemos empezar pequeño. ¿Te gustaría ver ejemplos de mangas de dragón que ha hecho? Tengo fotos de clientes que empezaron igual que tú.
 
-Cliente: Se ven increíbles, pero ¿qué pasa si no me gusta el resultado?
+Cliente: Sí, muéstrame fotos. ¿Cuánto tiempo lleva una manga así?
 
-Bot: Antes de empezar, Carlos hace una consulta personalizada y te muestra el diseño final. No se tatúa nada hasta que estés 100% seguro. Además, tienes seguimiento de cicatrización y garantía de retoque si es necesario.
+Bot: Claro, te envío 3 fotos ahora mismo. [Bot envía fotos] Una manga completa toma 8-10 sesiones, divididas en viajes de 4 días, luego 3, luego 3, con 3 semanas de descanso entre cada viaje para la cicatrización. Todos estos clientes quedaron tan contentos que han vuelto para extensiones. ¿Qué te parece el estilo?
 
-Cliente: ¿Y si no puedo ir a todas las sesiones seguidas?
+Cliente: Se ven increíbles, pero ¿qué pasa si no me gusta el resultado final? He oído historias de tatuajes que salen mal.
 
-Bot: Puedes agendar cada viaje según tu disponibilidad, y si surge algo, puedes reprogramar sin perder tu depósito. El proceso es flexible y adaptado a ti.
+Bot: Excelente pregunta, Luis. Antes de empezar, Mateo hace una consulta personalizada donde te muestra el diseño final en detalle. Puedes pedir cambios ilimitados hasta que estés 100% seguro. No se tatúa nada hasta entonces. Además, tienes seguimiento post-sesión y garantía de retoque gratis si algo no sale perfecto.
 
-Cliente: ¿Y si me sale más caro de lo que pensaba?
+Cliente: Ok, eso suena bien. ¿Y si no puedo ir a todas las sesiones seguidas? Tengo un trabajo que me hace viajar.
 
-Bot: Solo pagas por las sesiones que realices. Si prefieres, puedes empezar con una sesión de prueba y decidir si continúas. Además, tenemos opciones de pago por transferencia, tarjeta o incluso a plazos.
+Bot: No hay problema. Puedes agendar cada viaje según tu calendario. Si surge un imprevisto, reprogramamos sin perder tu depósito. El proceso es flexible y adaptado a tu vida. Muchos clientes viajan por trabajo y lo hacen funcionar.
 
-Cliente: Ok, me interesa la sesión de prueba. ¿Qué sigue?
+Cliente: ¿Y si me sale más caro de lo que pensaba? ¿Hay forma de pagar en cuotas?
 
-Bot: Te agendo una consulta gratuita con Carlos para definir el diseño y resolver todas tus dudas. ¿Te gustaría esta semana o la próxima?
+Bot: Solo pagas por las sesiones que realices. Si prefieres, empezamos con una sesión de prueba de 2 horas por $300, y decides si continúas. Para pagos, aceptamos transferencia, tarjeta de crédito, o incluso planes de pago a 3-6 meses sin intereses. ¿Te gustaría explorar la opción de sesión de prueba?
+
+Cliente: Hmm, la sesión de prueba suena tentadora. ¿Qué incluye exactamente?
+
+Bot: La sesión de prueba incluye un boceto personalizado basado en tus ideas, y si te gusta, podemos tatuar una pequeña parte (como la cabeza del dragón) para ver cómo queda. Es una forma de probar sin compromiso. Si no continúas, solo pagas esa sesión. ¿Te interesa agendarla?
+
+Cliente: Sí, me interesa. ¿Cuándo hay disponibilidad?
+
+Bot: ¡Genial! Mateo tiene espacio la próxima semana. Te agendo una consulta gratuita primero para definir el diseño, y luego la sesión de prueba. ¿Prefieres lunes o miércoles?
+
+Cliente: Lunes por la tarde.
+
+Bot: Perfecto, Luis. Te confirmo para el lunes a las 4 PM. Recibirás detalles por WhatsApp. ¿Algo más que quieras saber?
+
+Cliente: No, gracias. Estoy emocionado.
+
+Bot: ¡Yo también! Hasta el lunes, Luis.
 ```
 
 **Técnicas usadas:**
@@ -128,6 +152,55 @@ Bot: Te agendo una consulta gratuita con Carlos para definir el diseño y resolv
 - Garantía y reducción de riesgo (retoque, diseño previo, pago por sesión)
 - Flexibilidad (agenda, pagos, sesiones de prueba)
 - Cierre suave y consultivo
+
+---
+
+### Simulacro 3: Cliente con ideas locas y sin diseño claro (exploración de historias personales)
+
+```
+Cliente (Santiago): Hola, quiero un tatuaje en la espalda. Algo grande, como una espalda completa. Me encantan las cosas japonesas: máscaras de teatro, dragones, samuráis, cerezos en flor, pero no sé, quiero algo loco, como si fuera de una película de terror o algo épico. ¿Puedes ayudarme?
+
+Bot: ¡Hola Santiago! Suena como un proyecto increíblemente personal y ambicioso. Una espalda completa es el lienzo perfecto para una historia épica. Me fascina que menciones elementos japoneses - máscaras de teatro, dragones, samuráis, cerezos... eso evoca una narrativa rica. Pero para crear algo realmente único y significativo, que no sea solo "loco" sino que te represente, necesito entender mejor qué te inspira. ¿Puedes contarme más sobre por qué te atraen las máscaras de teatro? ¿Hay alguna historia personal detrás?
+
+Cliente: Bueno, las máscaras me recuerdan a cuando era niño y veía películas de terror japonés con mi abuelo. Él me contaba historias de fantasmas y espíritus, y siempre decía que las máscaras ocultaban secretos. Era como magia oscura.
+
+Bot: Eso es fascinante, Santiago. Tu abuelo suena como una figura importante. ¿Qué tipo de películas veían? ¿Te daban miedo o te emocionaban?
+
+Cliente: Me emocionaban, pero también me daban miedo. Eran como "Ringu" o "The Ring", con espíritus vengativos. Mi abuelo decía que las máscaras eran portales a otros mundos.
+
+Bot: Wow, portales a otros mundos... eso es profundo. Ahora, ¿qué hay de los dragones? ¿Por qué te atraen?
+
+Cliente: Los dragones son por mi signo zodiacal chino, soy dragón, y siento que representan fuerza y protección. Mi abuela creía en eso, decía que los dragones me guardaban.
+
+Bot: Tu abuela también... ¿Puedes contarme más sobre ella? Mencionaste que los cerezos simbolizan la belleza efímera de la vida.
+
+Cliente: Sí, mi abuela falleció hace poco de cáncer. Los cerezos florecen y caen rápido, como la vida. Ella amaba el hanami, ver los pétalos caer. Los samuráis porque admiro su honor y disciplina; mi abuelo era así, estricto pero justo.
+
+Bot: Santiago, esto es profundamente personal. Tu abuelo con sus historias de terror, tu signo dragón protector, la pérdida de tu abuela con los cerezos, el honor samurái... cada elemento cuenta una parte de tu historia familiar. Imagina una composición épica: una máscara Noh emergiendo de un dragón enrollado, con pétalos de cerezo cayendo como lágrimas samurái, fusionando terror, fuerza, pérdida y honor. Sería una narrativa visual poderosa de tu herencia. Mateo es experto en crear estas fusiones únicas. ¿Te gustaría ver bocetos preliminares basados en esta historia?
+
+Cliente: Sí, definitivamente. Pero ¿no será muy caro? Una espalda completa suena a una fortuna.
+
+Bot: Entiendo la preocupación, Santiago. Una espalda completa requiere 12-15 sesiones de $1,800 USD cada una, total alrededor de $27,000, pero podemos dividirlo en fases de 3-4 sesiones. Pagas solo por lo avanzado, y si no te convence después de la primera fase, paramos sin penalización. Además, este tatuaje no es solo arte; es una forma de honrar a tu familia en tu piel. ¿Quieres agendar una consulta gratuita de 45 minutos para explorar ideas y presupuesto?
+
+Cliente: Ok, me interesa. ¿Cómo es la consulta?
+
+Bot: Perfecto. En la consulta, Mateo te escuchará más sobre tus historias, dibujará conceptos rápidos en digital, y te dará un plan detallado con fases y costos. Es sin compromiso. ¿Prefieres esta semana (tenemos martes) o la próxima?
+
+Cliente: Esta semana, martes por la mañana.
+
+Bot: ¡Excelente! Te agendo para el martes a las 10 AM. Recibirás un recordatorio. ¿Algo más que quieras agregar a la idea?
+
+Cliente: Tal vez agregar elementos de terror sutiles, como sombras.
+
+Bot: ¡Genial! Mateo incorporará eso. Hasta el martes, Santiago.
+```
+
+**Técnicas usadas:**
+- Exploración profunda (preguntas abiertas para revelar historias personales)
+- Empatía y conexión emocional (reconocer significados personales)
+- Storytelling visual (traducir ideas abstractas a narrativas concretas)
+- Reducción de riesgo (fases, pago por avance, consulta gratuita)
+- Anclaje de valor emocional (enfatizar significado personal sobre costo)
 
 ---
 
@@ -154,34 +227,67 @@ Ghostline no solo responde: está entrenado con técnicas de marketing conversac
 - Automatiza el seguimiento y reenganche de clientes.
 
 ---
-## 🚀 Escenario Destacado: Go Service (Plantilla Express)
+## 🚀 Escenario Destacado: Go Service (Procesamiento de Imágenes de Alto Rendimiento)
 
-El Go Service permite al artista ofrecer plantillas prediseñadas listas para tatuar, acelerando la venta y llenando huecos en la agenda.
+El servicio en Go es el "músculo" técnico de la plataforma. Mientras NestJS (el cerebro) se encarga de hablar con los clientes y gestionar la lógica de negocio, Go se encarga de las tareas pesadas de procesamiento de imágenes de alto rendimiento.
 
-**Flujo ejemplo:**
+Se ha elegido Go por su velocidad extrema y su capacidad para manejar concurrencia, algo vital si tienes a cientos de tatuadores subiendo diseños pesados al mismo tiempo.
 
-```
-Artista (Carlos): "Ghostline, quiero activar el Go Service para mi plantilla de dragón minimalista."
+🧠 **El Rol de Go en el Ecosistema**  
+Este microservicio recibe imágenes crudas (bocetos de iPad, fotos de servilletas, dibujos a lápiz) y las transforma en activos digitales listos para la estación de trabajo del tatuador.
 
-Ghostline Bot: "¡Listo! ¿Qué precio quieres poner para esta plantilla?"
+🛠️ **Las 4 Funciones Principales (Features)**  
+1. **Generador de Stencils de Alta Precisión (Stencilizer)**  
+   Es la función estrella. El artista sube un diseño con sombras y colores, y Go devuelve una imagen en blanco y negro puro, con líneas ultra-definidas.  
+   Qué hace: Aplica algoritmos de Canny Edge Detection o Adaptive Thresholding.  
+   El resultado: Un stencil que el tatuador puede imprimir directamente en papel hectográfico sin tener que calcar manualmente en Procreate por horas.
 
-Artista: "$400 USD, solo 1 disponible."
+2. **Optimizador de Anatomía (Image Clean-up)**  
+   A menudo, el artista toma una foto de un boceto físico con sombras de luz, arrugas en el papel o ruido visual.  
+   Qué hace: Escala la imagen, corrige la perspectiva (si la foto fue tomada de lado) y elimina el fondo grisáceo para dejar el papel blanco puro y la línea negra perfecta.
 
-Ghostline Bot: "Plantilla 'Dragón Minimalista' publicada en tu catálogo Go Service por $400 USD. ¿Quieres que la promocione a tus seguidores y clientes en lista de espera?"
+3. **Compresión y Multi-formato (Asset Pipeline)**  
+   Un tatuador de élite no puede esperar 10 segundos a que cargue una galería de 500 diseños.  
+   Qué hace: Al recibir una imagen, Go genera automáticamente tres versiones:  
+   - Thumbnail: Para que el Dashboard cargue instantáneamente.  
+   - Web-Optimized: Para enviar por WhatsApp al cliente sin gastar datos.  
+   - High-Res Stencil: El archivo pesado para impresión.
 
-Artista: "Sí, anúncialo en WhatsApp y redes."
+4. **Comunicación con la Nube (AWS S3 & Supabase)**  
+   Go no solo procesa, sino que organiza.  
+   Qué hace: Sube los resultados a Amazon S3 y le envía un "ping" (webhook) a NestJS para decirle: "Oye, el stencil de Mateo ya está listo. Aquí está el link".
 
-Ghostline Bot: "Mensaje enviado a tus clientes y seguidores. El primero en confirmar y pagar se queda con la plantilla. ¿Quieres ver el listado de interesados en tiempo real?"
+🚀 **¿Por qué Go y no Node.js para esto?**
 
-Artista: "Sí, muéstrame."
+| Característica    | Node.js (NestJS)          | Go (Microservicio)              |
+|-------------------|---------------------------|---------------------------------|
+| Uso principal     | Lógica, API, WhatsApp, DB. | Procesamiento de pixeles y visión. |
+| Velocidad         | Rápido para I/O.          | Ultra-rápido para cálculo matemático. |
+| Memoria           | Consume más por cada proceso. | Eficiencia extrema (usa punteros). |
+| Resultado         | El bot es inteligente.     | El proceso de imagen es instantáneo. |
 
-Ghostline Bot: "Actualmente interesados: 3. ¿Deseas reservar para alguien o dejarlo abierto?"
-```
+Exportar a Hojas de cálculo
 
-**Beneficios:**
-- Vendes diseños exclusivos sin esperar consultas largas.
-- Llenas huecos de agenda rápidamente.
-- El bot gestiona pagos y reservas automáticamente.
+📋 **Ejemplo de un Flujo de Trabajo en Go**  
+Gatillo: NestJS recibe una imagen por WhatsApp y la guarda en una carpeta temporal.  
+
+Llamada: NestJS le dice a Go: POST /process-stencil { "imageUrl": "...", "threshold": 0.5 }.  
+
+Proceso en Go:  
+1. Decodifica la imagen (JPEG/PNG/HEIC).  
+2. Convierte a Grises.  
+3. Aplica Gaussian Blur (para quitar ruido).  
+4. Aplica Canny Edge (para extraer el contorno).  
+5. Invierte colores (si es necesario).  
+
+Entrega: Go devuelve el stencil limpio y lo guarda en el "Vault" del tatuador.
+
+💡 **El Valor para el Negocio**  
+Para un tatuador como Mateo, este servicio en Go es un asistente de taller. Antes, él tenía que pasar 45 minutos en Photoshop o Procreate "limpiando" una foto para poder imprimir el stencil. Ahora, el microservicio de Go lo hace en 2 segundos.
+
+¿Te gustaría que definamos cómo el servicio de Go también podría "extraer" la paleta de colores de una imagen para sugerirle al artista qué tintas comprar?
+
+La plantilla que el tatuador hizo, la regenera apta para ponerse en la piel y ser impresa.
 
 ---
 
@@ -258,7 +364,7 @@ El bot permite buscar y compartir trabajos previos del artista mediante lenguaje
 
 ### Capacidades de Búsqueda
 
-- **Búsqueda Semántica:** "Muéstrame los dragones que ha hecho Carlos"
+- **Búsqueda Semántica:** "Muéstrame los dragones que ha hecho Mateo"
 - **Por Estilo:** "Quiero ver trabajos de Neo-Japonés"
 - **Por Zona:** "¿Tienes ejemplos de mangas completas?"
 - **Por Color:** "Enséñame tatuajes en blanco y negro"
@@ -290,9 +396,9 @@ Cuando un cliente completa el check-in final (día 21):
 ```
 Artista: Hola Ghostline, quiero configurar mi cuenta.
 Bot: ¡Perfecto! ¿Cuál es tu nombre completo?
-Artista: Carlos Mendoza
+Artista: Mateo Mendoza
 Bot: ¿Cuál es tu email?
-Artista: carlos.mendoza.ink@gmail.com
+Artista: mateo.mendoza.ink@gmail.com
 Bot: ¿Qué tipo de proyectos haces? (grandes, pequeños, ambos)
 Artista: Solo grandes, mínimo 8 horas.
 Bot: ¿Cuánto cobras por sesión?
@@ -313,12 +419,12 @@ Bot: ¡Listo! Tu perfil está activo y listo para vender por ti.
 ### 2. Diagnóstico y Propuesta de Viajes
 ```
 Cliente: Hola, quiero una manga japonesa.
-Bot: ¡Genial! Carlos trabaja en 3 viajes (4, 3 y 3 días) para lograr el mejor resultado. Cada sesión es de $1,500 USD. Para reservar, se requiere un abono de $1,000 USD. ¿Quieres que te ayude a agendar tu primer viaje?
+Bot: ¡Genial! Mateo trabaja en 3 viajes (4, 3 y 3 días) para lograr el mejor resultado. Cada sesión es de $1,500 USD. Para reservar, se requiere un abono de $1,000 USD. ¿Quieres que te ayude a agendar tu primer viaje?
 ```
 
 ### 3. Gap Filler (Oportunidad por Cancelación)
 ```
-Bot: ¡Atención! Se liberó un espacio de 4 días con Carlos. El primero en confirmar y abonar se lo queda. ¿Te interesa?
+Bot: ¡Atención! Se liberó un espacio de 4 días con Mateo. El primero en confirmar y abonar se lo queda. ¿Te interesa?
 ```
 
 ### 4. Procesamiento de Arte
@@ -337,7 +443,7 @@ Bot: ¡Perfecto! Todo va bien. Te escribo en una semana para el siguiente check-
 ### 6. Búsqueda de Portafolio
 ```
 Cliente: ¿Tienes ejemplos de dragones?
-Bot: Sí, aquí tienes 3 proyectos recientes de dragones de Carlos. ¿Quieres ver más?
+Bot: Sí, aquí tienes 3 proyectos recientes de dragones de Mateo. ¿Quieres ver más?
 ```
 
 ### 7. Modificación de Perfil
@@ -351,6 +457,76 @@ Bot: Cambios aplicados. ¿Algo más?
 Artista: No, gracias.
 Bot: ¡Listo! Todo actualizado.
 ```
+
+---
+
+### 8. Flujo Interno: Notificación al Tatuador de Nueva Cita Agendada
+
+**Después de que el bot agenda una cita con un cliente, automáticamente notifica al tatuador con todos los detalles relevantes.**
+
+```
+[Notificación automática por WhatsApp al tatuador Mateo]
+
+🤖 Ghostline: ¡Hola Mateo! 👋
+
+Nueva cita agendada:
+
+📅 **Fecha y Hora:** Martes 14 de enero, 10:00 AM
+👤 **Cliente:** Santiago López
+📞 **Teléfono:** +52 55 1234 5678
+🎨 **Proyecto:** Espalda completa - Estilo Neo-Japonés Épico
+💰 **Sesión:** Consulta gratuita (30 min)
+💵 **Valor:** Gratuita
+📍 **Tipo:** Videollamada
+
+**📝 Ideas del Cliente:**
+- Elementos japoneses: máscaras de teatro Noh, dragones protectores, samuráis honorables, cerezos en flor.
+- Tema: Historia familiar - terror sutil (películas con abuelo), fuerza (signo dragón), pérdida (abuela fallecida), honor (disciplina samurái).
+- Composición deseada: Narrativa épica fusionando terror, fuerza, pérdida y honor. Agregar sombras para elementos de terror.
+
+**🖼️ Imágenes de Referencia:**
+El cliente envió 4 fotos de inspiración. Ábrelas aquí: [Link seguro a galería en Dashboard]
+
+¿Quieres revisar las fotos ahora o preparar algún boceto preliminar?
+
+Responde "Revisar" para abrir el link, o "Boceto" para que te ayude a generar ideas.
+```
+
+**Respuesta del Tatuador:**
+```
+Mateo: Revisar
+```
+
+**Bot responde:**
+```
+🤖 Ghostline: Abriendo galería... [Envía link directo a WhatsApp]
+
+Las fotos incluyen:
+1. Máscara Noh clásica con expresión terrorífica.
+2. Dragón chino enrollado en una montaña.
+3. Samurai con armadura bajo cerezos.
+4. Composición de película de terror japonesa con sombras.
+
+¿Te ayudo a generar un boceto conceptual basado en estas ideas y la historia del cliente?
+```
+
+**Tatuador:**
+```
+Mateo: Sí, genera boceto.
+```
+
+**Bot:**
+```
+🤖 Ghostline: Procesando... Boceto listo en tu Dashboard. Te envío preview por WhatsApp. [Envía imagen del boceto]
+
+¿Aprobado? O quieres ajustes?
+```
+
+**Beneficios para el Tatuador:**
+- Recibe notificaciones instantáneas de nuevas citas.
+- Acceso directo a ideas del cliente y referencias visuales.
+- Ayuda para generar bocetos rápidos.
+- Todo organizado para prepararse antes de la consulta.
 
 ---
 
@@ -378,18 +554,18 @@ Perfecto. Primero lo básico:
 
 ---
 
-👨‍🎨 Artista: "Carlos Mendoza"
+👨‍🎨 Artista: "Mateo Mendoza"
 
 ---
 
 🤖 Bot:
-Genial, Carlos. 
+Genial, Mateo. 
 
 📧 ¿Cuál es tu email para notificaciones y pagos?
 
 ---
 
-👨‍🎨 Artista: "carlos.mendoza.ink@gmail.com"
+👨‍🎨 Artista: "mateo.mendoza.ink@gmail.com"
 
 ---
 
@@ -544,7 +720,7 @@ y no copio diseños de otros artistas"
 
 ---
 
-👨‍🎨 Artista: "@carlosmendoza.ink"
+👨‍🎨 Artista: "@mateomendoza.ink"
 
 ---
 
@@ -604,10 +780,10 @@ y no copio diseños de otros artistas"
 
 Aquí está tu perfil:
 
-👤 **Carlos Mendoza**
-📧 carlos.mendoza.ink@gmail.com
+👤 **Mateo Mendoza**
+📧 mateo.mendoza.ink@gmail.com
 🌎 Zona horaria: CDMX (America/Mexico_City)
-📸 Instagram: @carlosmendoza.ink
+📸 Instagram: @mateomendoza.ink
 
 **⏰ Horario:**
 - Días: Lunes a Jueves
@@ -676,7 +852,7 @@ solo dime: "Quiero cambiar mi perfil" o "Necesito ajustar mi horario"
 
 ### 🔧 Escenario 2: Modificación de Perfil (Usuario Experimentado)
 
-**3 meses después, Carlos quiere hacer cambios:**
+**3 meses después, Mateo quiere hacer cambios:**
 
 ```
 ═══════════════════════════════════════════════════════════════════
@@ -688,7 +864,7 @@ solo dime: "Quiero cambiar mi perfil" o "Necesito ajustar mi horario"
 ---
 
 🤖 Bot:
-¡Claro, Carlos! 👋
+¡Claro, Mateo! 👋
 
 ¿Qué quieres modificar?
 
@@ -845,7 +1021,7 @@ Para futuras modificaciones, solo dime qué quieres cambiar en cualquier momento
 
 ### 🔄 Escenario 3: Cambio de Tipo de Sesiones
 
-**Carlos decide empezar a aceptar también sesiones pequeñas:**
+**Mateo decide empezar a aceptar también sesiones pequeñas:**
 
 ```
 ═══════════════════════════════════════════════════════════════════
@@ -857,7 +1033,7 @@ Para futuras modificaciones, solo dime qué quieres cambiar en cualquier momento
 ---
 
 🤖 Bot:
-¡Perfecto, Carlos! 👋
+¡Perfecto, Mateo! 👋
 
 ¿Qué quieres modificar?
 
@@ -1005,9 +1181,9 @@ Tu agenda ahora es más flexible. 💪
 ═══════════════════════════════════════════════════════════════════
 
 👤 **Perfil:**
-- Nombre: Carlos Mendoza
-- Email: carlos.mendoza.ink@gmail.com
-- Instagram: @carlosmendoza.ink
+- Nombre: Mateo Mendoza
+- Email: mateo.mendoza.ink@gmail.com
+- Instagram: @mateomendoza.ink
 - Zona horaria: America/Mexico_City (CDMX)
 - Estado: ✅ Activo
 
