@@ -823,171 +823,159 @@ Descarga tu stencil profesional:
 
 ---
 
-### 🔧 Escenario 2: Modificación de Perfil (Usuario Experimentado)
+---
 
-**3 meses después, Mateo quiere hacer cambios:**
+# 🔧 MODIFICACIÓN DE PERFIL
+
+## ✨ Actualización Inteligente de Configuración
+
+Ghostline permite modificar cualquier aspecto de tu perfil profesional en cualquier momento. El sistema es inteligente y solo afecta a reservas futuras, manteniendo intactos los proyectos en curso.
+
+---
+
+## 📋 Flujo de Modificación de Perfil
+
+### 🎯 Inicio de Modificación
 
 ```
-═══════════════════════════════════════════════════════════════════
-🔧 MODIFICACIÓN DE PERFIL
-═══════════════════════════════════════════════════════════════════
+👨‍🎨 Mateo: "Hola, necesito hacer algunos ajustes en mi perfil"
 
-👨‍🎨 Artista: "Hola, necesito hacer algunos ajustes en mi perfil"
+🤖 Ghostline:
+¡Claro, Mateo! 👋 ¿Qué quieres modificar?
 
----
+1️⃣ ⏰ Horarios y días de trabajo
+2️⃣ 💰 Tarifas y depósitos
+3️⃣ 🎨 Tipo de sesiones (grandes/pequeñas)
+4️⃣ 🖼️ Especialidades y restricciones
+5️⃣ 📋 Metodología de proyectos
+6️⃣ 👀 Ver configuración completa
 
-🤖 Bot:
-¡Claro, Mateo! 👋
-
-¿Qué quieres modificar?
-
-1️⃣ Horarios y días de trabajo
-2️⃣ Tarifas y depósitos
-3️⃣ Tipo de sesiones (grandes/pequeñas)
-4️⃣ Especialidades y restricciones
-5️⃣ Metodología de proyectos
-6️⃣ Ver configuración completa
-
----
-
-👨‍🎨 Artista: "Quiero modificar mis horarios, ahora también voy a 
+👨‍🎨 Mateo: "Quiero modificar mis horarios, ahora también voy a
 trabajar los viernes, y voy a empezar más temprano"
+```
 
 ---
 
-🤖 Bot:
-Perfecto. Modificando horarios...
+### 📅 Ejemplo 1: Modificación de Horarios
 
-**Actualmente trabajas:**
-- Días: Lun-Jue
-- Horario: 10:00 AM - 6:00 PM
+```
+🤖 Ghostline:
+Perfecto. Modificando horarios... 📅
+
+**Tu configuración actual:**
+   • Días: Lunes a Jueves
+   • Horario: 10:00 AM - 6:00 PM
 
 ¿Cuáles son tus nuevos días de trabajo?
 
----
+👨‍🎨 Mateo: "Lunes a Viernes"
 
-👨‍🎨 Artista: "Lunes a Viernes"
-
----
-
-🤖 Bot:
-✅ Lun-Vie (5 días a la semana).
+🤖 Ghostline:
+✅ Días actualizados: Lunes a Viernes (5 días/semana)
 
 ¿A qué hora vas a iniciar ahora?
 
----
+👨‍🎨 Mateo: "9:00"
 
-👨‍🎨 Artista: "9:00"
-
----
-
-🤖 Bot:
-✅ Nueva hora de inicio: 9:00 AM.
+🤖 Ghostline:
+✅ Nueva hora de inicio: 9:00 AM
 
 ¿Mantienes la hora de salida a las 6:00 PM?
 
+👨‍🎨 Mateo: "Sí"
+
+🤖 Ghostline:
+✅ Horario completo actualizado
+
 ---
 
-👨‍🎨 Artista: "Sí"
+## 🎉 HORARIO ACTUALIZADO
 
----
+**📊 Comparación:**
 
-🤖 Bot:
-✅ Horario actualizado.
+| Aspecto | Antes | Ahora |
+|---------|-------|-------|
+| Días | Lun-Jue (4) | **Lun-Vie (5)** |
+| Inicio | 10:00 AM | **9:00 AM** |
+| Fin | 6:00 PM | 6:00 PM |
+| Horas/día | 8 horas | **9 horas** |
 
-═══════════════════════════════════════════════════════════════════
-✅ HORARIO ACTUALIZADO
-═══════════════════════════════════════════════════════════════════
-
-**Antes:**
-- Lun-Jue, 10:00 AM - 6:00 PM
-
-**Ahora:**
-- Lun-Vie, 9:00 AM - 6:00 PM
-
-⚠️ **Importante:**
-- Las citas ya agendadas NO se modifican
-- Nuevas reservas usarán esta disponibilidad
-- Ahora tienes 1 día adicional (Viernes) y 1 hora extra (9-10 AM)
+**⚠️ Importante:**
+- ✅ Las citas ya agendadas NO se modifican
+- ✅ Nuevas reservas usarán esta disponibilidad
+- ✅ Ahora tienes 1 día adicional (Viernes) y 1 hora extra
 
 ¿Confirmar cambios?
 
----
+👨‍🎨 Mateo: "Sí, confirmar"
 
-👨‍🎨 Artista: "Sí, confirmar"
-
----
-
-🤖 Bot:
-✅ Cambios aplicados.
+🤖 Ghostline:
+✅ ¡Cambios aplicados!
 
 Tu calendario ahora refleja:
-🗓️ Lun-Vie | ⏰ 9:00 AM - 6:00 PM
+🗓️ Lunes-Viernes | ⏰ 9:00 AM - 6:00 PM
 
 ¿Algo más que modificar?
+```
 
 ---
 
-👨‍🎨 Artista: "Sí, también quiero cambiar mis tarifas. 
+### 💰 Ejemplo 2: Modificación de Tarifas
+
+```
+👨‍🎨 Mateo: "Sí, también quiero cambiar mis tarifas.
 Ahora voy a cobrar $1,800 por sesión"
 
----
-
-🤖 Bot:
-Modificando tarifas...
+🤖 Ghostline:
+Modificando tarifas... 💰
 
 **Tarifa actual:** $1,500 USD/sesión
 **Nueva tarifa:** $1,800 USD/sesión
 
-¿Mantienes el 30% de depósito? 
+¿Mantienes el 30% de depósito?
 (Con $1,800, el depósito sería $540)
 
----
+👨‍🎨 Mateo: "Sí, 30% está bien"
 
-👨‍🎨 Artista: "Sí, 30% está bien"
-
----
-
-🤖 Bot:
+🤖 Ghostline:
 ✅ Tarifas actualizadas:
-- Sesión: $1,800 USD
-- Depósito: $540 USD (30%)
-
-⚠️ **Cambio aplicado a:**
-- ✅ Nuevos clientes (desde ahora)
-- ⏸️ Proyectos en curso NO se modifican (mantienen tarifa original)
-
-¿Confirmar?
+   • Sesión: $1,800 USD
+   • Depósito: $540 USD (30%)
 
 ---
 
-👨‍🎨 Artista: "Sí"
+## ⚠️ POLÍTICA DE CAMBIOS
+
+**✅ Se aplica a:**
+- Nuevos clientes (desde ahora)
+
+**⏸️ NO se modifica:**
+- Proyectos en curso (mantienen tarifa original)
+- Citas ya confirmadas
+
+¿Confirmar cambios?
+
+👨‍🎨 Mateo: "Sí"
+
+🤖 Ghostline:
+✅ ¡Cambios guardados!
 
 ---
 
-🤖 Bot:
-✅ Cambios guardados.
+## 📊 RESUMEN DE MODIFICACIONES
 
-¿Algo más que modificar?
+**Cambios realizados hoy:**
 
----
+| Elemento | Antes | Ahora |
+|----------|-------|-------|
+| 📅 Días | Lun-Jue | **Lun-Vie** |
+| ⏰ Inicio | 10:00 AM | **9:00 AM** |
+| 💵 Tarifa | $1,500 | **$1,800** |
+| 💰 Depósito | $450 | **$540** |
 
-👨‍🎨 Artista: "No, eso es todo"
+**🎯 Estado:** Todos los cambios están activos
 
----
-
-🤖 Bot:
-Perfecto. Resumen de cambios realizados hoy:
-
-📅 Días: Lun-Jue → **Lun-Vie**
-⏰ Inicio: 10:00 AM → **9:00 AM**
-💵 Tarifa: $1,500 → **$1,800**
-💰 Depósito: $450 → **$540**
-
-Todos los cambios están activos. 
 Para futuras modificaciones, solo dime qué quieres cambiar en cualquier momento.
-
-═══════════════════════════════════════════════════════════════════
 ```
 
 ---
