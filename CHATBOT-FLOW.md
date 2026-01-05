@@ -1,66 +1,133 @@
+## 🛠️ Ejemplo de Consulta Avanzada: Búsqueda, Filtros y Features
+
+Ghostline permite al artista consultar, filtrar y exportar información detallada de su portafolio y agenda. Aquí un ejemplo completo de cómo el tatuador aprovecha todas las features:
+
+---
+
+### Ejemplo: El artista pide todos los tatuajes de sombras de los últimos 6 meses
+
+```
+Artista (Carlos): Ghostline, muéstrame todos los tatuajes de sombras que he hecho en los últimos seis meses.
+
+Bot: He encontrado 14 tatuajes de sombras realizados entre julio y diciembre:
+1. Manga completa - Javi (15/07/2025)
+2. Espalda - Marco (22/08/2025)
+3. Media manga - Sofía (03/09/2025)
+... (lista completa)
+
+¿Quieres verlos por cliente, por zona del cuerpo, o por fecha?
+
+Artista: Por zona del cuerpo.
+
+Bot: Aquí tienes agrupados:
+- Manga completa: 7
+- Espalda: 4
+- Media manga: 3
+
+¿Te gustaría exportar la lista, ver fotos, o analizar estadísticas?
+
+Artista: Quiero ver las fotos y exportar la lista en PDF.
+
+Bot: Te envío las 14 fotos por WhatsApp y he generado un PDF con todos los detalles. ¿Quieres también estadísticas de duración promedio y satisfacción del cliente?
+
+Artista: Sí, muéstrame estadísticas.
+
+Bot: Promedio de duración: 8.5 horas por sesión. Satisfacción reportada: 4.9/5. ¿Deseas compartir este resumen en tus redes o enviarlo a un cliente?
+
+Artista: Compártelo en Instagram Stories.
+
+Bot: ¡Listo! Resumen publicado en tus Stories. ¿Necesitas algo más?
+```
+
+**Features y alcances mostrados:**
+- Búsqueda avanzada por tipo, fecha, cliente, zona, etc.
+- Agrupación y filtrado dinámico
+- Exportación de resultados (PDF, imágenes)
+- Estadísticas automáticas (duración, satisfacción, frecuencia)
+- Integración con WhatsApp y redes sociales
+- Respuestas contextuales y proactivas
+
+---
 ## 🧠 Simulacros de Conversación: Persuasión y Cierre de Ventas
 
 Aquí tienes dos ejemplos completos de cómo Ghostline persuade y cierra ventas usando técnicas de marketing conversacional, anclaje de valor, manejo de objeciones y urgencia.
 
 ---
 
-### Simulacro 1: Cliente indeciso, cierre con anclaje de valor y urgencia
+### Simulacro 1: Cliente indeciso y sensible al precio (negociación realista)
 
 ```
-Cliente (Ana): Hola, me interesa hacerme una manga, pero no sé si es el mejor momento. ¿Cuánto cuesta y cómo es el proceso?
+Cliente (Ana): Hola, me interesa hacerme una manga, pero la verdad es que no sé si me alcanza. ¿Cuánto cuesta y cómo funciona?
 
-Bot: ¡Hola Ana! Una manga es una obra de arte y requiere una planeación especial. Carlos trabaja en 3 viajes (4, 3 y 3 días), cada sesión es de $1,500 USD. El proceso está diseñado para que disfrutes cada etapa y el resultado sea espectacular.
+Bot: ¡Hola Ana! Una manga completa con Carlos es un proyecto artístico que se realiza en 3 viajes (4, 3 y 3 días). Cada sesión es de $1,500 USD, pero el proceso está pensado para que puedas ir pagando por fases y organizarte con tiempo.
 
-Cliente: ¿Y si no puedo ir a todos los viajes seguidos?
+Cliente: Uf, sí está caro... ¿No hay forma de hacerlo más económico?
 
-Bot: ¡No te preocupes! Entre cada viaje hay mínimo 21 días para que tu piel sane y puedas organizarte. Además, puedes reservar solo el primer viaje y después agendar los siguientes según tu disponibilidad.
+Bot: Entiendo que es una inversión importante. Carlos trabaja con materiales premium y cada diseño es único, por eso el valor. Si quieres, podemos empezar con una consulta gratuita para definir el tamaño y ver si se puede ajustar el proyecto a tu presupuesto.
 
-Cliente: ¿Y si cambio de opinión después de reservar?
+Cliente: ¿Y si solo hago media manga?
 
-Bot: Tu depósito es 100% flexible: si necesitas reprogramar, solo avísanos con 72h de anticipación y no pierdes tu lugar ni tu dinero. Así tienes total tranquilidad.
+Bot: ¡Por supuesto! Una media manga suele requerir 4-5 sesiones, y puedes decidir avanzar por etapas. Además, si reservas este mes, el depósito es flexible y puedes reagendar sin penalización.
 
-Cliente: Ok, suena bien, pero ¿por qué debería hacerlo ahora?
+Cliente: ¿Y si después de la primera sesión no puedo seguir?
 
-Bot: Justo ahora se liberó un espacio para el primer viaje en 3 semanas. Si reservas hoy, aseguras ese lugar y el precio actual. Además, Carlos solo toma 2 mangas nuevas al mes, así que es una oportunidad exclusiva. ¿Te ayudo a reservar tu lugar?
+Bot: No hay problema, solo pagas por las sesiones que realices. Además, tu diseño queda guardado y puedes retomarlo cuando quieras, sin perder tu avance ni tu inversión.
 
-Cliente: Sí, quiero reservar.
+Cliente: ¿Y si me arrepiento del diseño?
 
-Bot: ¡Perfecto! Te envío el link de pago para el depósito y aparto tu espacio. ¿Prefieres pagar con tarjeta o transferencia?
+Bot: Antes de tatuar, Carlos te muestra el diseño final y puedes pedir cambios. No se inicia nada hasta que estés 100% convencida.
+
+Cliente: Ok, me interesa la media manga, pero ¿puedo apartar solo con una parte del depósito?
+
+Bot: Sí, puedes apartar tu lugar con el 20% y el resto lo pagas antes de la primera sesión. ¿Te gustaría agendar la consulta gratuita para resolver todas tus dudas y ver opciones de diseño?
+
+Cliente: Sí, agenda la consulta.
+
+Bot: ¡Perfecto! Te agendo una videollamada de 20 minutos con Carlos. ¿Prefieres esta semana o la próxima?
 ```
 
 **Técnicas usadas:**
-- Anclaje de valor (habla de obra de arte, experiencia, exclusividad)
-- Manejo de objeciones (flexibilidad, tranquilidad, agenda adaptable)
-- Urgencia y escasez (espacio liberado, solo 2 mangas nuevas al mes)
-- Cierre directo y simple
+- Escucha activa y empatía (reconoce la preocupación por el precio)
+- Flexibilidad en pagos y fases
+- Reducción de riesgo (depósito flexible, reagendar sin penalización)
+- Prueba social y exclusividad (materiales premium, diseño único)
+- Cierre suave (consulta gratuita, sin presión)
 
 ---
 
-### Simulacro 2: Cliente buscando precio, cierre con portafolio y testimonios
+### Simulacro 2: Cliente dudoso, objeciones y cierre con portafolio/testimonios
 
 ```
-Cliente (Luis): Hola, ¿cuánto cuesta un tatuaje de dragón en el brazo?
+Cliente (Luis): Hola, ¿cuánto cuesta un tatuaje de dragón en el brazo? Vi que Carlos es muy bueno, pero no sé si es para mí.
 
-Bot: ¡Hola Luis! El precio depende del tamaño y detalle, pero para un dragón en manga completa, Carlos recomienda 8-10 sesiones de $1,800 USD cada una. ¿Te gustaría ver ejemplos de dragones que ha hecho?
+Bot: ¡Hola Luis! El precio depende del tamaño y detalle, pero para una manga de dragón, Carlos recomienda 8-10 sesiones de $1,800 USD cada una. ¿Te gustaría ver ejemplos de dragones que ha hecho?
 
-Cliente: Sí, muéstrame ejemplos.
+Cliente: Sí, pero la verdad es que nunca he pagado tanto por un tatuaje.
 
-Bot: Aquí tienes 3 mangas de dragón recientes de Carlos. Todos estos clientes quedaron fascinados con el resultado y varios han regresado para nuevos proyectos. [Bot envía fotos]
+Bot: Lo entiendo, es una decisión importante. Te muestro 3 mangas de dragón recientes de Carlos. Todos estos clientes quedaron tan contentos que han vuelto para nuevos proyectos. [Bot envía fotos]
 
-Cliente: Se ven increíbles, pero es una inversión grande.
+Cliente: Se ven increíbles, pero ¿qué pasa si no me gusta el resultado?
 
-Bot: ¡Totalmente! Por eso Carlos divide el proyecto en fases y solo pagas por cada viaje. Además, tu inversión incluye asesoría personalizada, seguimiento de cicatrización y acceso prioritario a fechas. La mayoría de nuestros clientes dicen que la experiencia y el resultado valen cada peso. ¿Te gustaría agendar una consulta gratuita para resolver todas tus dudas antes de decidir?
+Bot: Antes de empezar, Carlos hace una consulta personalizada y te muestra el diseño final. No se tatúa nada hasta que estés 100% seguro. Además, tienes seguimiento de cicatrización y garantía de retoque si es necesario.
 
-Cliente: Sí, quiero la consulta.
+Cliente: ¿Y si no puedo ir a todas las sesiones seguidas?
 
-Bot: ¡Genial! Te agendo una videollamada de 20 minutos con Carlos para que le cuentes tu idea y recibas una propuesta personalizada. ¿Qué día te viene mejor?
+Bot: Puedes agendar cada viaje según tu disponibilidad, y si surge algo, puedes reprogramar sin perder tu depósito. El proceso es flexible y adaptado a ti.
+
+Cliente: ¿Y si me sale más caro de lo que pensaba?
+
+Bot: Solo pagas por las sesiones que realices. Si prefieres, puedes empezar con una sesión de prueba y decidir si continúas. Además, tenemos opciones de pago por transferencia, tarjeta o incluso a plazos.
+
+Cliente: Ok, me interesa la sesión de prueba. ¿Qué sigue?
+
+Bot: Te agendo una consulta gratuita con Carlos para definir el diseño y resolver todas tus dudas. ¿Te gustaría esta semana o la próxima?
 ```
 
 **Técnicas usadas:**
-- Portafolio visual y testimonios (prueba social)
-- Anclaje de valor (asesoría, seguimiento, acceso prioritario)
-- Reducción de fricción (consulta gratuita, pago por fases)
-- Cierre suave (invita a siguiente paso sin presión)
+- Prueba social (clientes satisfechos, fotos reales)
+- Garantía y reducción de riesgo (retoque, diseño previo, pago por sesión)
+- Flexibilidad (agenda, pagos, sesiones de prueba)
+- Cierre suave y consultivo
 
 ---
 
