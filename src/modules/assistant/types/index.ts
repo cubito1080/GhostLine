@@ -26,8 +26,8 @@ export type DetectedIntent =
 
 // Tipos de conversación para selección de modelo
 export type ConversationType =
-  | 'sales_persuasion'    // Requiere Gemini Pro: negociación, cierre de venta
-  | 'simple_query';       // Usa Gemini Flash: info básica, consultas
+  | 'sales_persuasion' // Requiere Gemini Pro: negociación, cierre de venta
+  | 'simple_query'; // Usa Gemini Flash: info básica, consultas
 
 export type ToolName =
   | 'check-availability'

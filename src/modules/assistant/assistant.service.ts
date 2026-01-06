@@ -51,18 +51,21 @@ export class AssistantService {
       const tools = this.getAvailableTools();
 
       // 5. Determine which model to use based on conversation context
-      const conversationType = this.determineConversationType(dto.message, context);
-      const modelToUse = conversationType === 'sales_persuasion' 
-        ? GEMINI_MODELS.PRO 
-        : GEMINI_MODELS.FLASH;
-      
+      const conversationType = this.determineConversationType(
+        dto.message,
+        context,
+      );
+      const modelToUse =
+        conversationType === 'sales_persuasion'
+          ? GEMINI_MODELS.PRO
+          : GEMINI_MODELS.FLASH;
+
       this.logger.log(
-        `Conversation type: ${conversationType}, Using model: ${modelToUse}`
+        `Conversation type: ${conversationType}, Using model: ${modelToUse}`,
       );
 
       // 6. Generate AI response
       this.logger.log('Generating AI response');
-      /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
       const { response, functionCalls } =
         await this.geminiService.generateResponse(
           geminiMessages,
@@ -70,47 +73,36 @@ export class AssistantService {
           tools,
           modelToUse,
         );
-      /* eslint-enable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       let finalResponse = response;
       const executedFunctions: string[] = [];
 
       // 6. Execute function calls if any
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
       if (functionCalls && functionCalls.length > 0) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         this.logger.log(`Executing ${functionCalls.length} function calls`);
 
         for (const functionCall of functionCalls) {
           try {
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             const result: any = this.executeFunctionCall(
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
               functionCall.name,
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
               functionCall.args,
               context,
             );
 
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
             executedFunctions.push(functionCall.name);
 
             // Send function result back to Gemini
-            /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
             const followUpResponse =
               await this.geminiService.sendFunctionResult(
                 geminiMessages,
                 functionCall.name,
                 result,
               );
-            /* eslint-enable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             finalResponse = followUpResponse;
           } catch (error) {
             this.logger.error(
-              // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
               `Error executing function ${functionCall.name}`,
               error,
             );
@@ -119,7 +111,6 @@ export class AssistantService {
       }
 
       // 7. Generate and save final response
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-argument
       const assistantResponse =
         await this.responseGenerator.generateAndSaveResponse(
           dto.conversationId,
@@ -131,7 +122,6 @@ export class AssistantService {
       return assistantResponse;
     } catch (error) {
       this.logger.error('Error processing message', error);
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
       throw error;
     }
   }
@@ -336,41 +326,77 @@ export class AssistantService {
 
     // Palabras clave que indican necesidad de persuasión (usar Pro)
     const salesKeywords = [
-      'precio', 'caro', 'barato', 'descuento', 'oferta', 'cuánto',
-      'no estoy seguro', 'pensándolo', 'dudas', 'no sé',
-      'otro artista', 'comparar', 'cotizar',
-      'pagar', 'anticipo', 'depósito', 'confirmar',
-      'negociar', 'flexible', 'presupuesto limitado',
-      'vale la pena', 'convencer', 'mejor opción',
+      'precio',
+      'caro',
+      'barato',
+      'descuento',
+      'oferta',
+      'cuánto',
+      'no estoy seguro',
+      'pensándolo',
+      'dudas',
+      'no sé',
+      'otro artista',
+      'comparar',
+      'cotizar',
+      'pagar',
+      'anticipo',
+      'depósito',
+      'confirmar',
+      'negociar',
+      'flexible',
+      'presupuesto limitado',
+      'vale la pena',
+      'convencer',
+      'mejor opción',
     ];
 
     // Palabras clave para consultas simples (usar Flash)
     const simpleQueryKeywords = [
-      'hola', 'buenas', 'gracias', 'adiós',
-      'horario', 'ubicación', 'dirección', 'dónde',
-      'portafolio', 'trabajos', 'diseños', 'ver',
-      'disponibilidad', 'agenda', 'calendario',
-      'cuánto tiempo', 'duración', 'cuánto tarda',
+      'hola',
+      'buenas',
+      'gracias',
+      'adiós',
+      'horario',
+      'ubicación',
+      'dirección',
+      'dónde',
+      'portafolio',
+      'trabajos',
+      'diseños',
+      'ver',
+      'disponibilidad',
+      'agenda',
+      'calendario',
+      'cuánto tiempo',
+      'duración',
+      'cuánto tarda',
     ];
 
     // Verificar si el mensaje contiene keywords de ventas/persuasión
-    const hasSalesIntent = salesKeywords.some(keyword => 
-      messageLower.includes(keyword)
+    const hasSalesIntent = salesKeywords.some((keyword) =>
+      messageLower.includes(keyword),
     );
 
     // Verificar si el mensaje contiene keywords de consulta simple
-    const hasSimpleQueryIntent = simpleQueryKeywords.some(keyword => 
-      messageLower.includes(keyword)
+    const hasSimpleQueryIntent = simpleQueryKeywords.some((keyword) =>
+      messageLower.includes(keyword),
     );
 
     // Lógica de decisión basada en contexto de conversación
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    if (context.conversationStage === 'pricing' || context.conversationStage === 'payment') {
+    if (
+      context.conversationStage === 'pricing' ||
+      context.conversationStage === 'payment'
+    ) {
       return 'sales_persuasion'; // Etapa crítica de venta
     }
 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    if (context.conversationStage === 'confirmation' || context.conversationStage === 'booking') {
+    if (
+      context.conversationStage === 'confirmation' ||
+      context.conversationStage === 'booking'
+    ) {
       return 'sales_persuasion'; // Cierre de venta
     }
 
