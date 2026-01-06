@@ -1,6 +1,6 @@
 # Calendar Module
 
-Google Calendar integration and synchronization.
+Google Calendar integration and synchronization. // santiago must analyze if google integration is actually better than setting up our own cal
 
 ## Responsibilities
 - Google Calendar API integration

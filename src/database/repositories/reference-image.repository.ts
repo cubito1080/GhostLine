@@ -54,11 +54,11 @@ export class ReferenceImageRepository {
    */
   async getNextOrderIndex(conversationId: string): Promise<number> {
     const count = await this.countByConversation(conversationId);
-    
+
     if (count >= 6) {
       throw new Error('Maximum 6 reference images per conversation exceeded');
     }
-    
+
     return count + 1;
   }
 

@@ -23,10 +23,6 @@ export class UpdateArtistMethodologyDto {
   work_start_time?: string; // Format: "HH:MM"
   work_end_time?: string; // Format: "HH:MM"
 
-  // Lunch break (optional)
-  lunch_break_start?: string;
-  lunch_break_end?: string;
-
   // Project trip structures
   trip_structures?: {
     [projectType: string]: {
@@ -68,8 +64,6 @@ export const METHODOLOGY_EXAMPLES = {
     working_days: [1, 2, 3, 4], // Mon-Thu
     work_start_time: '10:00',
     work_end_time: '18:00',
-    lunch_break_start: '13:00',
-    lunch_break_end: '14:00',
     trip_structures: {
       full_sleeve: {
         estimated_sessions: 10,
@@ -110,8 +104,6 @@ export const METHODOLOGY_EXAMPLES = {
     working_days: [1, 2, 3, 4, 5, 6], // Mon-Sat
     work_start_time: '11:00',
     work_end_time: '20:00',
-    lunch_break_start: '15:00',
-    lunch_break_end: '16:00',
     trip_structures: {
       small_tattoo: {
         estimated_sessions: 1,
@@ -151,8 +143,6 @@ export const METHODOLOGY_EXAMPLES = {
     working_days: [1, 2, 3, 4, 5], // Mon-Fri
     work_start_time: '09:00',
     work_end_time: '18:00',
-    lunch_break_start: '13:00',
-    lunch_break_end: '14:00',
     trip_structures: {
       small_tattoo: {
         estimated_sessions: 1,
@@ -198,8 +188,6 @@ export const METHODOLOGY_EXAMPLES = {
     working_days: [2, 3, 4, 5, 6], // Tue-Sat
     work_start_time: '10:00',
     work_end_time: '19:00',
-    lunch_break_start: '14:00',
-    lunch_break_end: '15:00',
     trip_structures: {
       micro_tattoo: {
         estimated_sessions: 1,
@@ -285,4 +273,3 @@ export const VALIDATION_SCENARIOS = {
     Example: 10:00-17:00 (large) + 17:30-18:30 (small 1h touch-up)
   `,
 };
-
